@@ -1,153 +1,156 @@
-#
-# This is the server logic of a Shiny web application. You can run the
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-#-------------------------------------------------App Server----------------------------------
-library(viridis)
-library(dplyr)
-library(tibble)
-library(tidyverse)
-library(shinythemes)
-library(sf)
-library(RCurl)
-library(tmap)
-library(rgdal)
-library(leaflet)
+if (!require("shiny")) install.packages("shiny")
 library(shiny)
-library(shinythemes)
-library(plotly)
-library(ggplot2)
-#can run RData directly to get the necessary date for the app
-#global.r will enable us to get new data everyday
-#update data with automated script
-source("global.R") 
-#load('./output/covid-19.RData')
-shinyServer(function(input, output) {
-#----------------------------------------
-#tab panel 1 - Home Plots
-#preapare data for plot
-output$case_overtime <- renderPlotly({
-    #determin the row index for subset
-    req(input$log_scale)
-    end_date_index <- which(date_choices == input$date)
-    #if log scale is not enabled, we will just use cases
-    if (input$log_scale == FALSE) {
-        #render plotly figure
-        case_fig <- plot_ly()
-        #add comfirmed case lines
-        case_fig <- case_fig %>% add_lines(x = ~date_choices[1:end_date_index], 
-                             y = ~as.numeric(aggre_cases[input$country,])[1:end_date_index],
-                             line = list(color = 'rgba(67,67,67,1)', width = 2),
-                             name = 'Confirmed Cases')
-        #add death line 
-        case_fig <- case_fig %>% add_lines(x = ~date_choices[1:end_date_index],
-                               y = ~as.numeric(aggre_death[input$country,])[1:end_date_index],
-                               name = 'Death Toll')
-        #set the axis for the plot
-        case_fig <- case_fig %>% 
-            layout(title = paste0(input$country,'\t','Trend'),
-                   xaxis = list(title = 'Date',showgrid = FALSE), 
-                   yaxis = list(title = 'Comfirmed Cases/Deaths',showgrid=FALSE)
-                   )
-        }
-    #if enable log scale, we need to take log of the y values
-    else{
-        #render plotly figure
-        case_fig <- plot_ly()
-        #add comfirmed case lines
-        case_fig <- case_fig %>% add_lines(x = ~date_choices[1:end_date_index], 
-                                           y = ~log(as.numeric(aggre_cases[input$country,])[1:end_date_index]),
-                                           line = list(color = 'rgba(67,67,67,1)', width = 2),
-                                           name = 'Confirmed Cases')
-        #add death line 
-        case_fig <- case_fig %>% add_lines(x = ~date_choices[1:end_date_index],
-                                           y = ~log(as.numeric(aggre_death[input$country,])[1:end_date_index]),
-                                           name = 'Death Toll')
-        #set the axis for the plot
-        case_fig <- case_fig %>% 
-            layout(title = paste0(input$country,'<br>','\t','Trends'),
-                   xaxis = list(title = 'Date',showgrid = FALSE), 
-                   yaxis = list(title = 'Comfirmed Cases/Deaths(Log Scale)',showgrid=FALSE)
-            )
-    }
-    return(case_fig)
-        })
-#----------------------------------------
-#tab panel 2 - Maps
-data_countries <- reactive({
-    if(!is.null(input$choices)){
-        if(input$choices == "Cases"){
-            return(aggre_cases_copy)
-            
-        }else{
-            return(aggre_death_copy)
-        }}
-})
+if (!require("leaflet")) { install.packages("leaflet", repos="http://cran.us.r-project.org")}
+library(leaflet)
+if (!require("dplyr")) { install.packages("dplyr")}
+library(dplyr)
+if (!require("tigris")) { install.packages("tigris")}
+library(tigris)
+if (!require("tidyverse")) { install.packages("tidyverse")}
+library(tidyverse)
 
-#get the largest number of count for better color assignment
-maxTotal<- reactive(max(data_countries()%>%select_if(is.numeric), na.rm = T))    
-#color palette
-pal <- reactive(colorNumeric(c("#FFFFFFFF" ,rev(inferno(256))), domain = c(0,log(binning(maxTotal())))))    
+sum.formula = JS("function (cluster) {    
+    var markers = cluster.getAllChildMarkers();
+    var sum = 0; 
+    for (i = 0; i < markers.length; i++) {
+      sum += Number(markers[i].options.mag);
+    }
+      var size = sum/10000;
+      var mFormat = ' marker-cluster-';
+      if(sum < 3000) {
+      mFormat += 'small'
+      } else if (sum > 13000) {
+      mFormat += 'large'
+      } else {
+      mFormat += 'medium'};
+      return L.divIcon({ html: '<div><span>' + sum + '</span></div>', className: 'marker-cluster'+mFormat, iconSize: L.point(40, 40) });
+  }")
+
+
+server <- function(input, output) {
+  data_by_modzcta=read.csv(file="../data/data-by-modzcta.csv")
+  zipcode_latitude_longitude=read.csv(file="../data/zipcode_latitude_longitude.csv")
+  data_by_lat_lng = data_by_modzcta %>%
+    inner_join(zipcode_latitude_longitude, by = "MODIFIED_ZCTA") %>%
+    mutate(zipcode=as.character(MODIFIED_ZCTA))
+  
+  data_by_lat_lng_input <- reactive({
+    data_by_lat_lng %>%
+      filter(BOROUGH_GROUP %in% input$borough)
+  })
+  
+  data_type_input <- reactive({
+    input$data_type
+  })
+  
+  # cache zip boundaries that are download via tigris package
+  options(tigris_use_cache = TRUE)
+  
+  # get zip boundaries that start with 282 (outdated example)
+  char_zips <- zctas(cb = TRUE)
+  
+  # https://api.rpubs.com/insight/leaflet
+  output$map <- renderLeaflet({
     
-output$map <- renderLeaflet({
-    map <-  leaflet(countries) %>%
-        addProviderTiles("Stadia.Outdoors", options = providerTileOptions(noWrap = TRUE)) %>%
-        setView(0, 30, zoom = 3) })
-
-
-observe({
-    if(!is.null(input$date_map)){
-        select_date <- format.Date(input$date_map,'%Y-%m-%d')
-    }
-    if(input$choices == "Cases"){
-        #merge the spatial dataframe and cases dataframe
-        aggre_cases_join <- merge(countries,
-                                  data_countries(),
-                                  by.x = 'NAME',
-                                  by.y = 'country_names',sort = FALSE)
-        #pop up for polygons
-        country_popup <- paste0("<strong>Country: </strong>",
-                                aggre_cases_join$NAME,
-                                "<br><strong>",
-                                "Total Cases: ",
-                                aggre_cases_join[[select_date]],
-                                "<br><strong>")
-        leafletProxy("map", data = aggre_cases_join)%>%
-            addPolygons(fillColor = pal()(log((aggre_cases_join[[select_date]])+1)),
-                        layerId = ~NAME,
-                        fillOpacity = 1,
-                        color = "#BDBDC3",
-                        weight = 1,
-                        popup = country_popup) 
+    # join zip boundaries and income data 
+    char_zips <- geo_join(char_zips, 
+                          data_by_lat_lng_input(), 
+                          by_sp = "GEOID10", 
+                          by_df = "zipcode",
+                          how = "inner")
+    
+    # create color palette 
+    pal <- colorNumeric(
+      palette = "Blues",
+      domain = char_zips[[data_type_input()]])
+    
+    # create labels for zipcodes
+    labels <- 
+      paste0(
+        "<b>", "Infomation", "</b><br/>",
+        "COVID_CASE_COUNT: ", as.character(char_zips$COVID_CASE_COUNT), "<br/>",
+        "COVID_CASE_RATE: ", as.character(char_zips$COVID_CASE_RATE), "<br/>",
+        "COVID_DEATH_COUNT: ", as.character(char_zips$COVID_DEATH_COUNT), "<br/>",
+        "COVID_DEATH_RATE: ", as.character(char_zips$COVID_DEATH_RATE), "<br/>",
+        "PERCENT_POSITIVE: ", as.character(char_zips$PERCENT_POSITIVE), "<br/>",
+        "TOTAL_COVID_TESTS: ", as.character(char_zips$TOTAL_COVID_TESTS)) %>%
+      lapply(htmltools::HTML)
+    
+    # This if controls for no circles showing if rates are selected
+    if (data_type_input() %in% list("COVID_CASE_COUNT", "COVID_DEATH_COUNT", "TOTAL_COVID_TESTS")) {
+      map <- leaflet(char_zips) %>%
+        # set view to New York City
+        setView(lng = -73.98928, lat = 40.75042, zoom = 10) %>%
+        addProviderTiles("CartoDB.DarkMatter", options = providerTileOptions(noWrap = TRUE)) %>%
+        addCircleMarkers(
+          lng=~longitude,
+          lat=~latitude,
+          color = 'red',
+          stroke = FALSE,
+          fillOpacity = 0.5,
+          options = markerOptions(mag = char_zips[[data_type_input()]]),
+          clusterOptions = markerClusterOptions(iconCreateFunction=JS(sum.formula)),
+          popup=~paste(
+            "<b>", "Infomation", "</b><br/>",
+            "COVID_CASE_COUNT: ", as.character(COVID_CASE_COUNT), "<br/>",
+            "COVID_CASE_RATE: ", as.character(COVID_CASE_RATE), "<br/>",
+            "COVID_DEATH_COUNT: ", as.character(COVID_DEATH_COUNT), "<br/>",
+            "COVID_DEATH_RATE: ", as.character(COVID_DEATH_RATE), "<br/>",
+            "PERCENT_POSITIVE: ", as.character(PERCENT_POSITIVE), "<br/>",
+            "TOTAL_COVID_TESTS: ", as.character(TOTAL_COVID_TESTS)
+          )
+        ) %>%
+        addLabelOnlyMarkers(
+          lng = ~longitude,
+          lat = ~latitude,
+          options = markerOptions(mag = char_zips[[data_type_input()]]),
+          label = char_zips[[data_type_input()]],
+          labelOptions = labelOptions(noHide = T, direction = 'center', textOnly = T),
+          clusterOptions = markerClusterOptions(iconCreateFunction=JS(sum.formula))) %>%
+        # add zip codes
+        addPolygons(fillColor = ~pal(char_zips[[data_type_input()]]),
+                    weight = 2,
+                    opacity = 1,
+                    color = "white",
+                    dashArray = "3",
+                    fillOpacity = 0.7,
+                    highlight = highlightOptions(weight = 2,
+                                                 color = "#FF0000",
+                                                 dashArray = "",
+                                                 fillOpacity = 0.7,
+                                                 bringToFront = TRUE),
+                    label = labels) %>%
+        # add legend
+        addLegend(pal = pal, 
+                  values = char_zips[[data_type_input()]], 
+                  opacity = 0.7, 
+                  title = htmltools::HTML(data_type_input()),
+                  position = "topright")
     } else {
-        #join the two dfs together
-        aggre_death_join<- merge(countries,
-                                 data_countries(),
-                                 by.x = 'NAME',
-                                 by.y = 'country_names',
-                                 sort = FALSE)
-        #pop up for polygons
-        country_popup <- paste0("<strong>Country: </strong>",
-                                aggre_death_join$NAME,
-                                "<br><strong>",
-                                "Total Deaths: ",
-                                aggre_death_join[[select_date]],
-                                "<br><strong>")
-        
-        leafletProxy("map", data = aggre_death_join)%>%
-            addPolygons(fillColor = pal()(log((aggre_death_join[[select_date]])+1)),
-                        layerId = ~NAME,
-                        fillOpacity = 1,
-                        color = "#BDBDC3",
-                        weight = 1,
-                        popup = country_popup)
-        
-        }
-    })
+      map <- leaflet(char_zips) %>%
+        # set view to New York City
+        setView(lng = -73.98928, lat = 40.75042, zoom = 10) %>%
+        addProviderTiles("CartoDB.DarkMatter", options = providerTileOptions(noWrap = TRUE)) %>%
+        # add zip codes
+        addPolygons(fillColor = ~pal(char_zips[[data_type_input()]]),
+                    weight = 2,
+                    opacity = 1,
+                    color = "white",
+                    dashArray = "3",
+                    fillOpacity = 0.7,
+                    highlight = highlightOptions(weight = 2,
+                                                 color = "#FF0000",
+                                                 dashArray = "",
+                                                 fillOpacity = 0.7,
+                                                 bringToFront = TRUE),
+                    label = labels) %>%
+        # add legend
+        addLegend(pal = pal, 
+                  values = char_zips[[data_type_input()]], 
+                  opacity = 0.7, 
+                  title = htmltools::HTML(data_type_input()),
+                  position = "topright")
+    }
 
-
-})
+  })
+}
