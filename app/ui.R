@@ -13,7 +13,8 @@ ui <- dashboardPage(
     sidebarMenu(
       menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
       menuItem("Map", tabName = "map", icon = icon("map")),
-      menuItem("Widgets", tabName = "widgets", icon = icon("th"))
+      menuItem("Widgets", tabName = "widgets", icon = icon("th")),
+      menuItem("Vaccine Info", tabName = "Vaccine_info", icon = icon("syringe"))
     )
   ),
   
@@ -55,6 +56,11 @@ ui <- dashboardPage(
       # Second tab content
       tabItem(tabName = "widgets",
               h2("Widgets tab content")
+      ),
+      
+      tabItem(tabName = "Vaccine_info",
+              h2("Vaccine Info tab content"),
+              leafletOutput("vaccine_map")
       )
     )
   )

@@ -49,6 +49,8 @@ server <- function(input, output) {
   # get zip boundaries that start with 282 (outdated example)
   char_zips <- zctas(cb = TRUE)
   
+  # Map tab: Yiwen Fang --------------------------------------------------------
+  
   # https://api.rpubs.com/insight/leaflet
   output$map <- renderLeaflet({
     
@@ -152,5 +154,31 @@ server <- function(input, output) {
                   position = "topright")
     }
 
+  })
+  
+  # Vaccine tab: Yiwen Fang ----------------------------------------------------------------
+  
+  Covid_Vaccinne=read.csv(file="../data/Covid_Vaccinne.csv")
+  output$vaccine_map <- renderLeaflet({
+    map <- leaflet(Covid_Vaccinne) %>%
+      # set view to New York City
+      setView(lng = -73.98928, lat = 40.75042, zoom = 10) %>%
+      addProviderTiles("CartoDB.DarkMatter", options = providerTileOptions(noWrap = TRUE)) %>%
+      addCircleMarkers(
+        lng=~Longitude,
+        lat=~Latitude,
+        color = 'red',
+        stroke = FALSE,
+        fillOpacity = 0.5,
+        clusterOptions = markerClusterOptions(),
+        popup=~paste(
+          "<b>", "Infomation", "</b><br/>",
+          "Site Name: ", as.character(Name), "<br/>",
+          "Type: ", as.character(Type), "<br/>",
+          "Address: ", as.character(Location), "<br/>",
+          "Zip Code: ", as.character(Zip_code), "<br/>",
+          "Vaccine Offered: ", as.character(Vaccine_offered), "<br/>"
+        )
+      )
   })
 }
