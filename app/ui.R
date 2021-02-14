@@ -67,9 +67,9 @@ ui <- dashboardPage(
               DT::dataTableOutput("vaccine_table"),
               h3("More information about vaccine_offered type"),
               uiOutput("tab")
-              
-              
+
       )
+
     )
   )
   
