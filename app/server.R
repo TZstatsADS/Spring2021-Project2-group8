@@ -187,5 +187,10 @@ server <- function(input, output) {
     
     output$vaccine_table = DT::renderDataTable({
         Covid_Vaccine[1:5]})
+
+    url <- a("Moderna/Pfizer-BioNTech COVID-19 vaccine", href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html")
+    output$tab <- renderUI({
+      tagList("URL link :", url)
+    })
     
 }

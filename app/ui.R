@@ -64,7 +64,10 @@ ui <- dashboardPage(
               h2("Vaccine Info tab content"),
               leafletOutput("vaccine_map"),
               h2("The Vaccine data"),
-              DT::dataTableOutput("vaccine_table")
+              DT::dataTableOutput("vaccine_table"),
+              h3("More information about vaccine_offered type"),
+              uiOutput("tab")
+              
               
       )
     )
