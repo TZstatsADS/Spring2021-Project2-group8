@@ -1,3 +1,4 @@
+library(highcharter)
 if (!require("shiny")) install.packages("shiny")
 library(shiny)
 if (!require("leaflet")) { install.packages("leaflet", repos="http://cran.us.r-project.org")}
@@ -62,6 +63,171 @@ server <- function(input, output) {
   
   # get zip boundaries that start with 282 (outdated example)
   char_zips <- zctas(cb = TRUE)
+  
+  # Home tab: Daizy Lam --------------------------------------------------------
+  
+  output$total <- renderValueBox({
+    valueBox(
+      h4("Total Case Count"),
+      h3(sum(data_by_modzcta$COVID_CASE_COUNT)),
+      icon = icon("list"),
+      color = "aqua"
+    )
+  })
+  
+  output$death <- renderValueBox({
+    valueBox(
+      h4("Total Death Count"),
+      h3(sum(data_by_modzcta$COVID_DEATH_COUNT)),
+      icon = icon("user"),
+      color = "olive"
+    )
+  })
+  
+  output$max_case <- renderValueBox({
+    valueBox(
+      h4("Max Case Count: Queens"),
+      h3(max(by_borough$CASE_COUNT)),
+      icon = icon("list"),
+      color = "aqua"
+    )
+  })
+  
+  output$max_death <- renderValueBox({
+    valueBox(
+      h4("Max Death Count: Queens"),
+      h3(max(by_borough$DEATH_COUNT)),
+      icon = icon("user"),
+      color = "olive"
+    )
+  })
+  
+  # Analysis tab: 1) Rates: Daizy Lam --------------------------------------------------------
+  data_borough=read.csv("../data/group-data-by-boro-edit.csv")
+  data_borough_selection_a <- reactive({
+    if(is.null(input$select_borough_a)){selected_boro = levels(data_borough$Borough)}
+    else{selected_boro = input$select_borough_a}  
+    data_borough %>%
+      filter(Borough %in% selected_boro)
+    })
+  
+  data_borough_selection_s <- reactive({
+    if(is.null(input$select_borough_s)){selected_boro = levels(data_borough$Borough)}
+    else{selected_boro = input$select_borough_s}  
+    data_borough %>%
+      filter(Borough %in% selected_boro)
+  })
+  data_borough_selection_r <- reactive({
+    if(is.null(input$select_borough_r)){selected_boro = levels(data_borough$Borough)}
+    else{selected_boro = input$select_borough_r}  
+    data_borough %>%
+      filter(Borough %in% selected_boro)
+  })
+  #Max Rate:
+  by_borough=read.csv("../data/by-boro.csv")
+  output$max_case_rate <- renderValueBox({
+    valueBox(
+      h4("Highest Case Rate : StatenIsland"),
+      h3(max(by_borough$CASE_RATE)),
+      icon = icon("percentage"),
+      color = "maroon"
+    )
+  })
+  output$max_death_rate <- renderValueBox({
+    valueBox(
+      h4("Highest Death Rate : Bronx"),
+      h3(max(by_borough$DEATH_RATE)),
+      icon = icon("percentage"),
+      color = "fuchsia"
+    )
+  })
+  output$max_hos_rate <- renderValueBox({
+    valueBox(
+      h4("Highest Hospitalized Rate : Bronx"),
+      h3(max(by_borough$HOSPITALIZED_RATE)),
+      icon = icon("percentage"),
+      color = "purple"
+    )
+  })
+  
+  # Rate bar chart group by Age
+  output$boro_age_cr_bar <- renderHighchart({
+    data_borough_selection_a() %>%
+      filter(group=='Age') %>%
+      group_by(Borough,subgroup)%>%
+      select(CASE_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=CASE_RATE, group=Borough))
+  })
+  
+  output$boro_age_dr_bar <- renderHighchart({
+    data_borough_selection_a() %>%
+      filter(group=='Age') %>%
+      group_by(Borough,subgroup)%>%
+      select(DEATH_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=DEATH_RATE, fill=Borough, group=Borough))
+  }) 
+  
+  output$boro_age_hr_bar <- renderHighchart({
+    data_borough_selection_a() %>%
+      filter(group=='Age') %>%
+      group_by(Borough,subgroup)%>%
+      select(HOSPITALIZED_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=HOSPITALIZED_RATE, group=Borough))
+  }) 
+  
+  # Rate bar chart group by Sex
+
+  output$boro_sex_cr_bar <- renderHighchart({
+    data_borough_selection_s() %>%
+      filter(group=='Sex') %>%
+      group_by(Borough,subgroup)%>%
+      select(CASE_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=CASE_RATE,group=Borough)) 
+  })
+  
+  output$boro_sex_dr_bar <- renderHighchart({
+    data_borough_selection_s() %>%
+      filter(group=='Sex') %>%
+      group_by(Borough,subgroup)%>%
+      select(DEATH_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=DEATH_RATE,group=Borough)) 
+  })
+  
+  output$boro_sex_hr_bar <- renderHighchart({
+    data_borough_selection_s() %>%
+      filter(group=='Sex') %>%
+      group_by(Borough,subgroup)%>%
+      select(HOSPITALIZED_RATE)  %>%
+      hchart('column', hcaes(x=subgroup, y=HOSPITALIZED_RATE,group=Borough)) 
+  })
+
+  # Rate bar chart group by Race
+  
+  output$boro_race_cr_bar<- renderHighchart({
+    data_borough_selection_r() %>%
+    filter(group=='Race/ethnicity') %>%
+    group_by(Borough,subgroup)%>%
+    select(CASE_RATE,Borough,subgroup)  %>%
+    hchart('column', hcaes(x=subgroup, y=CASE_RATE,group=Borough))
+  })
+  
+  output$boro_race_dr_bar<- renderHighchart({
+    data_borough_selection_r() %>%
+      filter(group=='Race/ethnicity') %>%
+      group_by(Borough,subgroup)%>%
+      select(CASE_RATE,Borough,subgroup)  %>%
+      hchart('column', hcaes(x=subgroup, y=CASE_RATE,group=Borough))
+  })
+
+
+  output$boro_race_hr_bar<- renderHighchart({
+    data_borough_selection_r() %>%
+      filter(group=='Race/ethnicity') %>%
+      group_by(Borough,subgroup)%>%
+      select(CASE_RATE,Borough,subgroup)  %>%
+      hchart('column', hcaes(x=subgroup, y=CASE_RATE,group=Borough))
+  })
+
   
   # Map tab: Yiwen Fang --------------------------------------------------------
   
