@@ -7,7 +7,7 @@ library(leaflet)
 library(highcharter)
 
 ui <- dashboardPage(
-  skin="yellow",
+  skin="purple",
   dashboardHeader(title = "NYC COVID-19 & Vaccine tracker",titleWidth= 250),
   
   ## Sidebar content
@@ -34,26 +34,48 @@ ui <- dashboardPage(
       # First tab content
       tabItem(tabName = "Home",
               fluidPage(
-              h2("NYC COVID-19 Tracker & Vaccine Site Information",align = "center"),
+              h2(strong("Let's get vaccinated, NYC!"),align = "center"),
+              h3("Chuanchuan Liu, Daizy Lam, Hao Hu, Yiwen Fang, Zhihang Xia",align = "center",style="color:olive"),
+              h4("2021Spring GR5243 Project2 Group8 - M.A. Statistics program at Columbia University",align = "center",style="color:olive"),
+              
               fluidRow(width = 20, 
                        br(),
-                       h3("Chuanchuan Liu, Daizy Lam, Hao Hu, Yiwen Fang, Zhihang Xia",align = "center"),
+                       h3("New York City reported the first COVID-19 cases on March 1,2020 and our lives have changed drastically onwards. New York State has the highest numbers of confirmed cases in the United States till mid-July and most cases were in New York City where half of the population lives. NYC took control of the virus with the 
+                          leadership of governor Cuomo implementing a complete shutdown, masks mandates, stopping all business and restricting social gatherings. Although cases have been reduced in NYC, the pandemic is far from over as the virus mutates and cold weather and holiday season leads to resurgence.",align = "left"),
                        br(),
-                       h4("New York City reported the first COVID-19 cases on March 1,2020 and our lives have changed drastically onwards. New York State has the highest numbers of confirmed cases in the United States till mid-July and most cases were in New York City where half of the population lives. NYC took control of the virus with the leadership of governor Cuomo implementing a complete shutdown, masks mandates, stopping all business and restricting social gatherings. Although cases have been reduced in NYC, the pandemic is far from over as the virus mutates and cold weather and holiday season leads to resurgence.",align = "left"),
-                       br(),
-                       h4("In effort to stop the pandemic, The U.S. Department of Health & Human Services expedited the vaccine development program with Operation Warp Speed. In early November, both Moderna and Pfizer released promising results on vaccine trials and by mid December 2020, both Moderna and Pfizer vaccines were approved by the FDA.",align = "Left"),
-                       br(),
-                       h4("Knowing that COVID-19 vaccine is a vital tool to stop the pandemic, we designed this website to help New Yorkers get vaccine information and track virus updates in different areas.",align = "Left", opacity="1"),
+                       h3("In effort to stop the pandemic, The U.S. Department of Health & Human Services expedited the vaccine development program with Operation Warp Speed. In early November, both Moderna and Pfizer released promising results on vaccine trials and by mid December 2020, both Moderna and Pfizer vaccines were approved by the FDA.
+                          Knowing that COVID-19 vaccine is a vital tool to stop the pandemic, we designed this website to help New Yorkers get vaccine information and track virus updates in different areas.",align = "Left"),
                        br(),
                        style = "background-image: url('../nyc_bg.jpeg');
                                     background-repeat:no-repeat;background-size:cover;
-                                      opacity: 0.7;
+                                      opacity: 0.9;
                                     background-position:center"
-                       
-                       
-                       
-                       
                        ),
+              
+              fluidRow(hr(),
+                       column(width = 5,img(src="covid_vaccine.jpg",width = "100%", height = "35%"),align = "center",
+                              p(strong("Current Vaccine Eligibility:")," Phase 1b - Beginning February 15",
+                                br(),
+                                a(href="https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-eligibility.page", "Check Eligibility",target="_blank"),style="text-align:center;color:black")),
+           
+                       box(width = 5, height = "10%", h2(strong("NYC Vaccine App"),align = "center"),
+                           background = "purple",
+                           h4("Welcome to our NYC Vaccine App,
+                            We want to provide New Yorkers with updated COVID-19 information and help locate the closest vaccine site."),
+                           br(),
+                           tags$div(
+                             "1. Click the Map tab to understand the COVID situation in your target area", 
+                             tags$br(),
+                             tags$br(),
+                             "2. Click the vaccine info tab to search for the closest vaccine site with a particular zip code, location, and vaccine type",
+                             tags$br(),
+                             tags$br(),
+                             "3. Click the Time Series tab to understand the timeline of the COVID development in NYC",
+                             tags$br(),
+                             tags$br(),
+                             "4. Click the analysis tab to deep dive into the data by borough in different age group, sex and race."
+                           ) ),
+              ),
               
               fluidRow(
                          width = 12,
@@ -71,7 +93,7 @@ ui <- dashboardPage(
       #Rates
       tabItem(tabName = "Rates",
               fluidPage(
-                fluidRow(titlePanel("Interactive COVID-19 rate data by borough"),
+                fluidRow(titlePanel("Interactive COVID-19 Rates Dashboard"),
                          fluidRow(
                            valueBoxOutput('max_case_rate'),
                            valueBoxOutput('max_death_rate'),
@@ -79,11 +101,7 @@ ui <- dashboardPage(
                          ),
                          h4("Let's look into the COVID-19 data by the five boroughs in New York to compare the different situations in case rate, death rate and hospitalization by age group, sex and race/ethnicity."),
                          br(),
-                         h3("Findings"),
-                         br(),
-                         h4(""),
-                         
-                         
+                         h3("Data by borough")
                          
                 ),
 
@@ -92,6 +110,7 @@ ui <- dashboardPage(
                 tabsetPanel(
                   type="tabs",
                   tabPanel("Age",
+                          h4("The following charts compares the data by age in the five boroughs"),
                           fluidRow(
                             selectizeInput('select_borough_a','Select the Borough',
                                      choices = c('Boroughs' = '','Bronx','Brooklyn',
@@ -103,7 +122,7 @@ ui <- dashboardPage(
                     )
                     ),
                     tabPanel("Sex",
-                             h4("Let's look into the COVID-19 data by the five boroughs in New York to understand the different situations in the area"),
+                             h4("The following charts compares the data by sex in the five boroughs"),
                              fluidRow(
                                selectizeInput('select_borough_s','Select the Borough',
                                               choices = c('Boroughs' = '','Bronx','Brooklyn',
@@ -116,7 +135,7 @@ ui <- dashboardPage(
                              )
                              ),
                     tabPanel("Race/ethnicity",                          
-                             h4("Let's look into the COVID-19 data by the five boroughs in New York to understand the different situations in the area"),
+                             h4("The following charts compares the race/ethnicity in the five borough"),
                              fluidRow(
                                selectizeInput('select_borough_r','Select the Borough',
                                               choices = c('Boroughs' = '','Bronx','Brooklyn',
