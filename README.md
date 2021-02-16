@@ -10,7 +10,8 @@
 Term: Spring 2021
 
 + Team #8
-+ **Coronavirus and Vaccine Information in New York City**: + Team members
++ **Coronavirus and Vaccine Information in New York City**: 
++ Team members
 	+ Yiwen Fang
 	+ Zhihang Xia
 	+ Daizy Lam
