@@ -43,7 +43,7 @@ ui <- dashboardPage(
                        br(),
                        h4("In effort to stop the pandemic, The U.S. Department of Health & Human Services expedited the vaccine development program with Operation Warp Speed. In early November, both Moderna and Pfizer released promising results on vaccine trials and by mid December 2020, both Moderna and Pfizer vaccines were approved by the FDA.",align = "Left"),
                        br(),
-                       h4("Knowing that COVID-19 vaccine is a vital tool to stop the pandemic, we designed this website to help New Yorkers get vaccine information and track virus updates in different areas.",align = "Left"),
+                       h4("Knowing that COVID-19 vaccine is a vital tool to stop the pandemic, we designed this website to help New Yorkers get vaccine information and track virus updates in different areas.",align = "Left", opacity="1"),
                        br(),
                        style = "background-image: url('../nyc_bg.jpeg');
                                     background-repeat:no-repeat;background-size:cover;
