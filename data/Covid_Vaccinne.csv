@@ -1,0 +1,415 @@
+Name,Type,Location,Zip_code,Vaccine_offered,Latitude,Longitude
+"Gotham Health, Gouverneur",Hospital-Based Health Center/Clinic,"227 Madison Street, Manhattan",10002,Moderna,40.71,-73.99
+RendrCare: Metro True Care Medical,Primary Care,"8686 Bay Pkwy, Suite M1, Brooklyn",11214,Moderna,40.6,-74
+RendrCare: Chinatown Medical Physician,Primary Care,"86 Bowery, 4 Floor, Manhattan",10013,Moderna,40.72,-74
+"Gotham Health, Cumberland",Hospital-Based Health Center/Clinic,"100 North Portland Avenue, Brooklyn",11205,Moderna,40.69,-73.97
+NYC Vaccine Hub - Bushwick Educational Campus,Community Health Center/Clinic,"400 Irving Avenue, Brooklyn",11237,Moderna,40.7,-73.92
+Statcare - Jamaica,Urgent Care,"90-18 Sutphin Boulevard, Queens",11435,Moderna,40.7,-73.81
+Sun River Health Inwood,Community Health Center/Clinic,"1545 Inwood Ave, Bronx",10452,Moderna,40.84,-73.92
+Statcare - Brooklyn,Urgent Care,"341 Eastern Parkway, Brooklyn",11216,Moderna,40.68,-73.95
+Statcare - Astoria,Urgent Care,"37-15 23rd Avenue, Queens",11105,Moderna,40.78,-73.91
+NYC Vaccine Hub - Hillcrest High School,Community Health Center/Clinic,"160-05 Highland Avenue, Queens",11432,Moderna,40.72,-73.79
+Statcare - 174th St,Urgent Care,"932 East 174th Street, Bronx",10460,Moderna,40.84,-73.87
+Statcare - JH,Urgent Care,"80-10 Northern Boulevard, ground floor, Queens",11372,Moderna,40.75,-73.88
+NYC Vaccine Hub - South Bronx Educational Campus,Community Health Center/Clinic,"701 St Anns Avenue, Bronx",10455,Moderna,40.81,-73.91
+Statcare - Bartow,Urgent Care,"2063A Bartow Avenue, Bronx",10475,Moderna,40.88,-73.82
+ODA Primary Healthcare Network,Community Health Center/Clinic,"74 Wallabout Street, Brooklyn",11249,Moderna,40.64,-73.94
+NYC Health Dept. - Downtown Clinic,Community Health Center/Clinic,"125 Worth Street, Manhattan",10013,Moderna,40.72,-74
+Ryan Health - Chelsea Clinton Community Health Center,Community Health Center/Clinic,"645 10th Avenue, Manhattan",10036,Moderna,40.76,-73.99
+NYC Health Dept.- Uptown Clinic,Community Health Center/Clinic,"158 East 115th Street, Basement, Manhattan",10029,Moderna,40.79,-73.94
+RendrCare: Helen Chen,Primary Care,"136-36 39th Ave, 5 FL, Queens",11354,Moderna,40.77,-73.84
+RendrCare: Primary Care Medicine Associates,Primary Care,"38-08 Union St, 3L, Queens",11354,Moderna,40.77,-73.84
+RendrCare: Hong Jia Medical,Primary Care,"4235 Main St, #3K, Queens",11355,Moderna,40.75,-73.82
+"Gotham Health, Vanderbilt",Hospital-Based Health Center/Clinic,"165 Vanderbilt Avenue, 2nd Floor, Staten Island",10304,Moderna,40.61,-74.09
+"Gotham Health, Morrisania",Hospital-Based Health Center/Clinic,"1225 Gerard Avenue, 2ND FL RM 2B01, Bronx",10452,Moderna,40.84,-73.92
+Beacon Christian Community Health Center,Community Health Center/Clinic,"2079 Forest Avenue, Staten Island",10303,Moderna,40.63,-74.17
+RendrCare: Metro True Care Medical,Primary Care,"139 Centre St, #709, Manhattan",10013,Moderna,40.72,-74
+RendrCare: Janlian Medical Group,Primary Care,"833 58th Street, Brooklyn",11220,Moderna,40.64,-74.02
+"Gotham Health, East New York",Hospital-Based Health Center/Clinic,"2094 Pitkin Avenue, Brooklyn",11207,Moderna,40.67,-73.89
+"Gotham Health, Belvis",Hospital-Based Health Center/Clinic,"545 East 142nd Street, Bronx",10454,Moderna,40.81,-73.92
+NYC Health Dept. - Fort Greene Clinic,Hospital-Based Health Center/Clinic,"295 Flatbush Ave, 5th floor, Brooklyn",11201,Moderna,40.69,-73.99
+MiDoctor Urgent Care,Urgent Care,"715 9th Ave, Manhattan",10019,Moderna,40.77,-73.99
+Sun River Health The Hub,Community Health Center/Clinic,"459 East 149th Street, Bronx",10455,Moderna,40.81,-73.91
+GoHealth Urgent Care Eltingville,Urgent Care,"4316 Amboy Road, Staten Island",10312,Moderna,40.55,-74.18
+Essen Health Care: Metro Urgicare,Urgent Care,"899 Elton Avenue, Bronx",10451,Moderna,40.82,-73.93
+Sutphin Health Center,Community Health Center/Clinic,"105-04 Sutphin Blvd, Queens",11435,Moderna,40.7,-73.81
+Essen Health Care: Metro Urgicare,Urgent Care,"540 East 138th Street, Bronx",10454,Moderna,40.81,-73.92
+Lasante Health Center,Community Health Center/Clinic,"672 Parkside Avenue, Second Floor, Brooklyn",11226,Moderna,40.65,-73.96
+GoHealth Urgent Care Forest Hills,Urgent Care,"102-29 Queens Blvd, Queens",11375,Moderna,40.72,-73.84
+GoHealth Urgent Care West 69,Urgent Care,"199 Amsterdam Avenue, Manhattan",10023,Moderna,40.78,-73.98
+COSTCO Pharmacy,Pharmacy,"2975 Richmond Ave, Staten Island",10314,Moderna,40.6,-74.17
+COSTCO Pharmacy,Pharmacy,"32-50 Vernon Boulevard, Queens",11106,Moderna,40.76,-73.93
+Montefiore Family Health Center,Community Health Center/Clinic,"1 Fordham Plaza, 5th Floor, Bronx",10458,Moderna,40.86,-73.89
+Bronx Health Collective,Community Health Center/Clinic,"890 Prospect Avenue, Bronx",10459,Moderna,40.83,-73.89
+Metro Community Health Center - Bronx,Community Health Center/Clinic,"979 Cross Bronx Expressway, Bronx",10460,Moderna,40.84,-73.87
+Bronx Health Collective,Community Health Center/Clinic,"871 Prospect Avenue, Bronx",10459,Moderna,40.83,-73.89
+Montefiore Marble Hill Family Practice,Community Health Center/Clinic,"5525 Broadway, Ground Floor, Bronx",10463,Moderna,40.88,-73.91
+Montefiore Comprehensive Family Care Center,Community Health Center/Clinic,"1621 Eastchester Road, Bronx",10461,Moderna,40.85,-73.84
+Montefiore Comprehensive Health Care Center,Community Health Center/Clinic,"305 East 161st street, Bronx",10451,Moderna,40.82,-73.93
+Morris Heights Health Center - 85 Burnside,Community Health Center/Clinic,"85 West Burnside Avenue, Bronx",10453,Moderna,40.85,-73.91
+AdvantageCare Physicians - East New York Medical Office,Primary Care,"101 Pennsylvania Avenue, Brooklyn",11207,Moderna,40.67,-73.89
+AdvantageCare Physicians - Downtown Medical Office,Primary Care,"447 Atlantic Avenue, Brooklyn",11217,Moderna,40.68,-73.98
+AdvantageCare Physicians - Flatiron District Medical Office,Primary Care,"21 East 22nd Street, Manhattan",10010,Moderna,40.74,-73.98
+AdvantageCare Physicians - Harlem Medical Office,Primary Care,"215 West 125th Street, Manhattan",10027,Moderna,40.81,-73.95
+Bay Street Health Center,Community Health Center/Clinic,"57 Bay Street, Staten Island",10301,Moderna,40.63,-74.09
+Montefiore Williamsbridge Family Practice,Community Health Center/Clinic,"3011 Boston Road, Bronx",10469,Moderna,40.87,-73.85
+AdvantageCare Physicians - Flatbush Medical Office,Primary Care,"1000 Church Avenue, Brooklyn",11218,Moderna,40.64,-73.98
+AdvantageCare Physicians - Annandale Medical Office,Primary Care,"4771 Hylan Boulevard, Staten Island",10312,Moderna,40.55,-74.18
+AdvantageCare Physicians - Jamaica Estates Medical Office,Primary Care,"180-05 Hillside Ave, Queens",11432,Moderna,40.72,-73.79
+AdvantageCare Physicians - Forest Hills Medical Office,Primary Care,"96-10 Metropolitan Ave, Queens",11375,Moderna,40.72,-73.84
+AdvantageCare Physicians - Rockaway Medical Office,Primary Care,"29-15 Far Rockaway Boulevard, Queens",11691,Moderna,40.6,-73.76
+AdvantageCare Physicians - Clove Road Medical Office,Primary Care,"1050 Clove Road, Staten Island",10301,Moderna,40.63,-74.09
+Charles B Wang Community Health Center,Community Health Center/Clinic,"136-26 37th Avenue, Queens",11354,Moderna,40.77,-73.84
+Charles B Wang Community Health Center,Community Health Center/Clinic,"268 Canal Street, Manhattan",10013,Moderna,40.72,-74
+COSTCO Pharmacy,Pharmacy,"976 3rd Ave, Brooklyn",11232,Moderna,40.66,-74.01
+Mass Vaccination Site - Bathgate Contract Postal Station,Community Health Center/Clinic,"4006 3rd Ave, Bronx",10457,Moderna,40.85,-73.9
+Mass Vaccination Site - Brooklyn Army Terminal,Community Health Center/Clinic,"140 58th Street, Brooklyn",11220,Moderna,40.64,-74.02
+NYC Health Dept. - Corona Clinic,Community Health Center/Clinic,"34-33 Junction Boulevard, Queens",11372,Moderna,40.75,-73.88
+NYC Health Dept. - Crown Heights Clinic,Community Health Center/Clinic,"1218 Prospect Place, Brooklyn",11213,Moderna,40.67,-73.94
+Walton Family Health Center,Community Health Center/Clinic,"1894 Walton Avenue, Bronx",10453,Moderna,40.85,-73.91
+"The Institute for Family Health, Health Center of Harlem",Community Health Center/Clinic,"1824 Madison Avenue, Manhattan",10035,Moderna,40.8,-73.93
+"NYC Health + Hospitals, Jacobi",Hospital-Based Health Center/Clinic,"1400 Pelham Parkway South, Bronx",10461,Moderna,40.85,-73.84
+"NYC Health + Hospitals, Lincoln",Hospital-Based Health Center/Clinic,"234 East 149th Street, Room 2A5-250, Bronx",10451,Moderna,40.82,-73.93
+"NYC Health + Hospitals, North Central Bronx",Hospital-Based Health Center/Clinic,"3424 Kossuth Avenue, Bronx",10467,Moderna,40.87,-73.87
+"NYC Health + Hospitals, Bellevue",Hospital-Based Health Center/Clinic,"462 1st Avenue, Manhattan",10016,Moderna,40.75,-73.98
+"NYC Health + Hospitals, Harlem",Hospital-Based Health Center/Clinic,"506 Lenox Avenue, Manhattan",10037,Moderna,40.81,-73.94
+"NYC Health + Hospitals, Metropolitan",Hospital-Based Health Center/Clinic,"1901 1st Avenue, 4A, Manhattan",10029,Moderna,40.79,-73.94
+"NYC Health + Hospitals, Elmhurst",Hospital-Based Health Center/Clinic,"79-01 Broadway, Queens",11373,Moderna,40.74,-73.88
+"NYC Health + Hospitals, Queens",Hospital-Based Health Center/Clinic,"82-68 164th Street, Queens",11432,Moderna,40.72,-73.79
+"NYC Health + Hospitals, Coney Island",Hospital-Based Health Center/Clinic,"2601 Ocean Parkway, Main building, 2nd floor conference room, Brooklyn",11235,Moderna,40.58,-73.95
+"NYC Health + Hospitals, Kings County",Hospital-Based Health Center/Clinic,"451 Clarkson Avenue, Brooklyn",11203,Moderna,40.64,-73.94
+"NYC Health + Hospitals, Woodhull",Hospital-Based Health Center/Clinic,"760 Broadway, Brooklyn",11206,Moderna,40.7,-73.94
+"Gotham Health, Sydenham",Hospital-Based Health Center/Clinic,"264 West 118th Street, Manhattan",10026,Moderna,40.8,-73.95
+NYC Health Dept. - Morrisania Clinic,Community Health Center/Clinic,"1309 Fulton Ave, 3rd floor, Bronx",10456,Moderna,40.83,-73.91
+Stevenson Family Health Center,Community Health Center/Clinic,"731 White Plains Road, Bronx",10473,Moderna,40.82,-73.86
+Rite Aid Pharmacy,Pharmacy,"43-68 Amboy Road, Staten Island",10312,Moderna,40.55,-74.18
+NYC Vaccine Hub - Abraham Lincoln High School,Community Health Center/Clinic,"2800 Ocean Parkway, Brooklyn",11235,Moderna,40.58,-73.95
+NYC Vaccine Hub - Canarsie High School?,Community Health Center/Clinic,"1600 Rockaway Parkway, Brooklyn",11236,Moderna,40.64,-73.9
+NYC Vaccine Hub - George Westinghouse Vocational HS,Community Health Center/Clinic,"105 Johnson Street, Brooklyn",11201,Moderna,40.69,-73.99
+NYC Vaccine Hub - Marta Valle Secondary School,Community Health Center/Clinic,"145 Stanton Street, Manhattan",10002,Moderna,40.71,-73.99
+NYC Vaccine Hub - Wadleigh Campus/I.S. 88,Community Health Center/Clinic,"215 West 114th Street, Manhattan",10026,Moderna,40.8,-73.95
+NYC Vaccine Hub - August Martin High School?,Community Health Center/Clinic,"156-10 Baisley Boulevard, Queens",11434,Moderna,40.68,-73.78
+NYC Vaccine Hub - Beach Channel Educational Campus,Community Health Center/Clinic,"100-00 Beach Channel Drive, Queens",11694,Moderna,40.58,-73.84
+NYC Vaccine Hub - Aviation High School,Community Health Center/Clinic,"45-30 36th Street, Queens",11101,Moderna,40.74,-73.93
+NYC Vaccine Hub - Port Richmond H.S.,Community Health Center/Clinic,"85 St Joseph's Avenue, Staten Island",10302,Moderna,40.63,-74.14
+NYC Vaccine Hub - Staten Island Technical High School,Community Health Center/Clinic,"485 Clawson Street, Staten Island",10306,Moderna,40.58,-74.14
+NYC Vaccine Hub - Walton Educational School?,Community Health Center/Clinic,"2780 Reservoir Avenue, Bronx",10468,Moderna,40.87,-73.9
+NYC Vaccine Hub - Adlai E. Stevenson High School,Community Health Center/Clinic,"1980 Lafayette Avenue, Bronx",10473,Moderna,40.82,-73.86
+AdvantageCare Physicians - Upper East Side Medical Office,Primary Care,"215 East 95th Street, Manhattan",10128,Moderna,40.78,-73.95
+Rambam Family Health Center,Community Health Center/Clinic,"1122 Chestnut Ave, Brooklyn",11230,Moderna,40.62,-73.97
+AdvantageCare Physicians - Cambria Heights Medical Office,Primary Care,"206-20 Linden Boulevard, Queens",11411,Moderna,40.69,-73.73
+Rite Aid Pharmacy,Pharmacy,"592 East 183rd Street, Bronx",10458,Moderna,40.86,-73.89
+Lenox Hill Hospital - Einhorn Auditorium,Hospital-Based Health Center/Clinic,"131 East 76th Street, Manhattan",10021,"Moderna, Pfizer",40.77,-73.96
+Rite Aid Pharmacy,Pharmacy,"35-45 West 125th, Manhattan",10027,Moderna,40.81,-73.95
+Rite Aid Pharmacy,Pharmacy,"82-13 37th Ave, Queens",11372,Moderna,40.75,-73.88
+Rite Aid Pharmacy,Pharmacy,"8222 18th Avenue, Brooklyn",11214,Moderna,40.6,-74
+Rite Aid Pharmacy,Pharmacy,"2577 Nostrand Avenue, Brooklyn",11210,Moderna,40.63,-73.95
+VIP Community Services,Community Health Center/Clinic,"770 East 176th Street, 2nd Floor, Bronx",10460,Moderna,40.84,-73.87
+Ryan Health - Nena Community Health Center,Community Health Center/Clinic,"279 East 3rd Street, Manhattan",10009,Moderna,40.73,-73.98
+Ryan Health - Frederick Douglass Community Health,Community Health Center/Clinic,"2381 Frederick Douglass Boulevard, Manhattan",10027,Moderna,40.81,-73.95
+Charles B Wang Community Health Center,Community Health Center/Clinic,"137-43 45th Ave, Queens",11358,Moderna,40.76,-73.8
+Ryan Health - 97th street,Community Health Center/Clinic,"110 West 97th Street, Manhattan",10025,Moderna,40.8,-73.97
+NYC Health Dept. - Elmhurst Clinic,Community Health Center/Clinic,"48-01 90th Street, Queens",11373,Moderna,40.74,-73.88
+Montefiore Castle Hill Family Practice,Community Health Center/Clinic,"2175 Westchester Avenue, Bronx",10462,Moderna,40.84,-73.86
+NYS - Javits Center,Community Health Center/Clinic,"429 11th Avenue, Manhattan",10018,Pfizer,40.76,-73.99
+Metro Community Health Center - Staten Island,Community Health Center/Clinic,"2324 Forest Avenue, Staten Island",10303,Moderna,40.63,-74.17
+BronxCare,Hospital-Based Health Center/Clinic,"199 Mt. Eden Ave, Bronx",10457,"Moderna, Pfizer",40.85,-73.9
+"La Casa De Salud, Inc.",Community Health Center/Clinic,"966 Prospect Avenue, Acacia Network - La Casa De Salud, Bronx",10459,Moderna,40.83,-73.89
+Claremont Family Health Center,Community Health Center/Clinic,"262-4 East 174th Street, Bronx",10457,Moderna,40.85,-73.9
+Upper Room AIDS Ministry/Harlem United's The Nest Community Health Center,Community Health Center/Clinic,"169 W. 133rd Street, Manhattan",10030,Moderna,40.82,-73.94
+Ramon Valez Health Care Center,Community Health Center/Clinic,"754 East 151st Street, 2nd Floor, Bronx",10455,Moderna,40.81,-73.91
+Apicha Primary Care Clinic,Community Health Center/Clinic,"400 Broadway, Manhattan",10013,Moderna,40.72,-74
+Hospital for Special Surgery,Hospital-Based Health Center/Clinic,"525 East 71st Street, Belaire building (courtyard and ground floor), Manhattan",10021,Pfizer,40.77,-73.96
+NYS - Aqueduct Racetrack,Community Health Center/Clinic,"110-00 Rockaway Blvd, Racing Hall, Queens",11420,Pfizer,40.67,-73.81
+COSTCO Pharmacy,Pharmacy,"517 East 117th St., Manhattan",10035,Moderna,40.8,-73.93
+St. Jude Pharmacy,Pharmacy,"121 St Nicholas Avenue, Brooklyn",11237,Moderna,40.7,-73.92
+COSTCO Pharmacy,Pharmacy,"61-35 Junction Blvd, Queens",11374,Moderna,40.72,-73.86
+Sure Drugs,Pharmacy,"312 Ralph Ave, Brooklyn",11233,Moderna,40.68,-73.92
+Mellor's Drug Store,Pharmacy,"3343 Fulton Ave, Brooklyn",11208,Moderna,40.67,-73.87
+Essen Health Care: Metro Urgicare,Urgent Care,"2742 Third Avenue, Bronx",10455,Moderna,40.81,-73.91
+Mass Vaccination Site - Yankee Stadium,Community Health Center/Clinic,"1 E 161st Street, Bronx",10451,Moderna,40.82,-73.93
+Mass Vaccination Site - Citi Field,Community Health Center/Clinic,"Citi Field, Cars enter through gate 6, Queens",11368,Moderna,40.74,-73.85
+NewYork-Presbyterian Hospital - The Armory,Hospital-Based Health Center/Clinic,"651 W 168th Street, Manhattan",10032,Moderna,40.84,-73.94
+Richmond University Medical Center,Hospital-Based Health Center/Clinic,"355 Bard Ave, Staten Island",10310,"Moderna, Pfizer",40.63,-74.12
+Walgreens/Duane Reade,Pharmacy,"589 Prospect Ave, Brooklyn",11215,Moderna,40.66,-73.99
+Walgreens/Duane Reade,Pharmacy,"100 Broadway, Manhattan",10005,Moderna,40.71,-74.01
+Walgreens/Duane Reade,Pharmacy,"1430 Broadway, Manhattan",10018,Moderna,40.76,-73.99
+Walgreens/Duane Reade,Pharmacy,"1627 Broadway, Manhattan",10019,Moderna,40.77,-73.99
+Duane Reade,Pharmacy,"17 John St., Manhattan",10038,Moderna,40.71,-74
+Walgreens/Duane Reade,Pharmacy,"455 West 37th St., Manhattan",10018,Moderna,40.76,-73.99
+Walgreens/Duane Reade,Pharmacy,"5008 5th Ave, Brooklyn",11220,Moderna,40.64,-74.02
+Walgreens/Duane Reade,Pharmacy,"52 East 14th St., Manhattan",10003,Moderna,40.73,-73.99
+Walgreens/Duane Reade,Pharmacy,"866 3rd Ave, Manhattan",10022,Moderna,40.76,-73.97
+Walgreens/Duane Reade,Pharmacy,"2431 Boston Rd, Bronx",10467,Moderna,40.87,-73.87
+Walgreens/Duane Reade,Pharmacy,"31-55 Amboy Rd., #2, Staten Island",10306,Moderna,40.58,-74.14
+Walgreens/Duane Reade,Pharmacy,"193-01 Northern Blvd, Queens",11358,Moderna,40.76,-73.8
+Walgreens/Duane Reade,Pharmacy,"575 Lexington Ave, Manhattan",10022,Moderna,40.76,-73.97
+Walgreens/Duane Reade,Pharmacy,"1710 Crosby Ave, Bronx",10461,Moderna,40.85,-73.84
+Walgreens/Duane Reade,Pharmacy,"485 Lexington Ave, Manhattan",10017,Moderna,40.75,-73.97
+Walgreens/Duane Reade,Pharmacy,"1350 Broadway, Frnt. 3, Manhattan",10018,Moderna,40.76,-73.99
+Walgreens/Duane Reade,Pharmacy,"1251 Avenue of the Americas, #C1-11, Manhattan",10020,Moderna,40.76,-73.98
+Walgreens/Duane Reade,Pharmacy,"58-01 Queens Blvd., Queens",11377,Moderna,40.74,-73.9
+Walgreens/Duane Reade,Pharmacy,"1010 Rossville Ave, Staten Island",10309,Moderna,40.53,-74.22
+Walgreens/Duane Reade,Pharmacy,"67 Broad St., Manhattan",10004,Moderna,40.69,-74.02
+Walgreens/Duane Reade,Pharmacy,"1 Whitehall St., Manhattan",10004,Moderna,40.69,-74.02
+Ford Foundation,Community Health Center/Clinic,"321 E 42nd St, Manhattan",10017,Moderna,40.75,-73.97
+Walgreens/Duane Reade,Pharmacy,"625 8th Ave, #130, Manhattan",10018,Moderna,40.76,-73.99
+Rite Aid Pharmacy,Pharmacy,"32-87 Steinway Street, Queens",11103,Moderna,40.76,-73.91
+Rite Aid Pharmacy,Pharmacy,"101 Clinton Street, Brooklyn",11201,Moderna,40.69,-73.99
+Rite Aid Pharmacy,Pharmacy,"102-30 Atlantic Avenue, Queens",11416,Moderna,40.68,-73.85
+Rite Aid Pharmacy,Pharmacy,"1033 St Nicholas Avenue, Manhattan",10032,Moderna,40.84,-73.94
+Rite Aid Pharmacy,Pharmacy,"109-07 101 Avenue, Queens",11419,Moderna,40.69,-73.82
+Rite Aid Pharmacy,Pharmacy,"1091 Ogden Avenue, Bronx",10452,Moderna,40.84,-73.92
+Rite Aid Pharmacy,Pharmacy,"115-10 Merrick Boulevard, Queens",11434,Moderna,40.68,-73.78
+Rite Aid Pharmacy,Pharmacy,"122-02 Liberty Avenue, Queens",11419,Moderna,40.69,-73.82
+Rite Aid Pharmacy,Pharmacy,"144-29 Northern Boulevard, Queens",11354,Moderna,40.77,-73.84
+Rite Aid Pharmacy,Pharmacy,"1510 St Nicholas Avenue, Manhattan",10033,Moderna,40.85,-73.93
+Rite Aid Pharmacy,Pharmacy,"1535 2nd Avenue, Manhattan",10075,Moderna,40.77,-73.95
+Rite Aid Pharmacy,Pharmacy,"165-02 Baisley Boulevard, Queens",11434,Moderna,40.68,-73.78
+Rite Aid Pharmacy,Pharmacy,"1679 Bedford Avenue, Brooklyn",11225,Moderna,40.66,-73.95
+Rite Aid Pharmacy,Pharmacy,"1791 Utica Avenue, Brooklyn",11234,Moderna,40.61,-73.91
+Rite Aid Pharmacy,Pharmacy,"182 Smith Street, Brooklyn",11201,Moderna,40.69,-73.99
+Rite Aid Pharmacy,Pharmacy,"1849 2nd Avenue, Manhattan",10128,Moderna,40.78,-73.95
+Rite Aid Pharmacy,Pharmacy,"188 9th Avenue, Manhattan",10011,Moderna,40.74,-74
+Rite Aid Pharmacy,Pharmacy,"210 Amsterdam Avenue, Manhattan",10023,Moderna,40.78,-73.98
+Rite Aid Pharmacy,Pharmacy,"21-25 Broadway, Queens",11106,Moderna,40.76,-73.93
+Rite Aid Pharmacy,Pharmacy,"2170 Frederick Douglass Boulevard, Manhattan",10026,Moderna,40.8,-73.95
+Rite Aid Pharmacy,Pharmacy,"218-35 Hempstead Avenue, Queens",11429,Moderna,40.71,-73.74
+Rite Aid Pharmacy,Pharmacy,"21b Knolls Crescent, Bronx",10463,Moderna,40.88,-73.91
+Rite Aid Pharmacy,Pharmacy,"222-14 Linden Boulevard, Queens",11411,Moderna,40.69,-73.73
+Rite Aid Pharmacy,Pharmacy,"225 Liberty Street, Manhattan",10280,Moderna,40.71,-74.02
+Rite Aid Pharmacy,Pharmacy,"245-14 Francis Lewis Boulevard, Queens",11422,Moderna,40.66,-73.73
+Rite Aid Pharmacy,Pharmacy,"249 7th Avenue, Brooklyn",11215,Moderna,40.66,-73.99
+Rite Aid Pharmacy,Pharmacy,"26 Grand Central Terminal, Manhattan",10017,Moderna,40.75,-73.97
+Rite Aid Pharmacy,Pharmacy,"2748 East Tremont Avenue, Bronx",10461,Moderna,40.85,-73.84
+Rite Aid Pharmacy,Pharmacy,"2819 Church Avenue, Brooklyn",11226,Moderna,40.65,-73.96
+Rite Aid Pharmacy,Pharmacy,"282 8th Avenue, Manhattan",10001,Moderna,40.75,-74
+Rite Aid Pharmacy,Pharmacy,"3001 Mermaid Avenue, Brooklyn",11224,Moderna,40.58,-73.99
+Rite Aid Pharmacy,Pharmacy,"301 West 50th Street, Manhattan",10019,Moderna,40.77,-73.99
+Rite Aid Pharmacy,Pharmacy,"320 Smith Street, Brooklyn",11231,Moderna,40.68,-74.01
+Rite Aid Pharmacy,Pharmacy,"32-14 31st Street, Queens",11106,Moderna,40.76,-73.93
+Rite Aid Pharmacy,Pharmacy,"33-01 30th Avenue, Queens",11103,Moderna,40.76,-73.91
+Rite Aid Pharmacy,Pharmacy,"3539 Broadway, Manhattan",10031,Moderna,40.83,-73.95
+Rite Aid Pharmacy,Pharmacy,"3700-06 Junction Boulevard, Queens",11368,Moderna,40.74,-73.85
+Rite Aid Pharmacy,Pharmacy,"3823 Nostrand Avenue, Brooklyn",11235,Moderna,40.58,-73.95
+Rite Aid Pharmacy,Pharmacy,"408 Grand Street, Manhattan",10002,Moderna,40.71,-73.99
+Rite Aid Pharmacy,Pharmacy,"4188 Broadway, Manhattan",10033,Moderna,40.85,-73.93
+Rite Aid Pharmacy,Pharmacy,"43-20 Bell Boulevard, Queens",11361,Moderna,40.76,-73.77
+Rite Aid Pharmacy,Pharmacy,"46-12 Greenpoint Avenue, Queens",11104,Moderna,40.74,-73.92
+Rite Aid Pharmacy,Pharmacy,"4910 Broadway, Manhattan",10034,Moderna,40.87,-73.92
+Rite Aid Pharmacy,Pharmacy,"501 Avenue Of The Americas, Manhattan",10011,Moderna,40.74,-74
+Rite Aid Pharmacy,Pharmacy,"50-15 Roosevelt Avenue, Queens",11377,Moderna,40.74,-73.9
+Rite Aid Pharmacy,Pharmacy,"534 Hudson Street, Manhattan",10014,Moderna,40.73,-74.01
+Rite Aid Pharmacy,Pharmacy,"55-60 Myrtle Avenue, Queens",11385,Moderna,40.7,-73.89
+Rite Aid Pharmacy,Pharmacy,"57 East Burnside Avenue, Bronx",10453,Moderna,40.85,-73.91
+Rite Aid Pharmacy,Pharmacy,"5901 Bay Parkway, Brooklyn",11204,Moderna,40.62,-73.98
+Rite Aid Pharmacy,Pharmacy,"60-26 Woodside Avenue, Queens",11377,Moderna,40.74,-73.9
+Rite Aid Pharmacy,Pharmacy,"6423 Ft Hamilton Parkway, Brooklyn",11219,Moderna,40.63,-74
+Rite Aid Pharmacy,Pharmacy,"650 Castle Hill Avenue, Bronx",10473,Moderna,40.82,-73.86
+Rite Aid Pharmacy,Pharmacy,"7 Madison Street, Manhattan",10038,Moderna,40.71,-74
+Rite Aid Pharmacy,Pharmacy,"71-14 Austin Street, Queens",11375,Moderna,40.72,-73.84
+Rite Aid Pharmacy,Pharmacy,"7118 3rd Avenue, Brooklyn",11209,Moderna,40.62,-74.03
+Rite Aid Pharmacy,Pharmacy,"71-18 Kissena Boulevard, Queens",11367,Moderna,40.73,-73.83
+Rite Aid Pharmacy,Pharmacy,"741 Columbus Avenue, Manhattan",10025,Moderna,40.8,-73.97
+Rite Aid Pharmacy,Pharmacy,"7812 Flatlands Avenue, Brooklyn",11236,Moderna,40.64,-73.9
+Rite Aid Pharmacy,Pharmacy,"783 Manhattan Avenue, Brooklyn",11222,Moderna,40.73,-73.95
+Rite Aid Pharmacy,Pharmacy,"81 1st Avenue, Manhattan",10003,Moderna,40.73,-73.99
+Rite Aid Pharmacy,Pharmacy,"85-10 Northern Boulevard, Queens",11372,Moderna,40.75,-73.88
+Rite Aid Pharmacy,Pharmacy,"892 Flatbush Avenue, Brooklyn",11226,Moderna,40.65,-73.96
+Rite Aid Pharmacy,Pharmacy,"911 Morris Park Avenue, Bronx",10462,Moderna,40.84,-73.86
+Rite Aid Pharmacy,Pharmacy,"950 Southern Boulevard, Bronx",10459,Moderna,40.83,-73.89
+Rite Aid Pharmacy,Pharmacy,"95-14 63rd Drive, Queens",11374,Moderna,40.72,-73.86
+Rite Aid Pharmacy,Pharmacy,"960 Halsey Street, Brooklyn",11233,Moderna,40.68,-73.92
+Rite Aid Pharmacy,Pharmacy,"9738 Seaview Avenue, Brooklyn",11236,Moderna,40.64,-73.9
+Rite Aid Pharmacy,Pharmacy,"583 Grandview Avenue, Queens",11385,Moderna,40.7,-73.89
+Rite Aid Pharmacy,Pharmacy,"85 Avenue D, Manhattan",10009,Moderna,40.73,-73.98
+Walgreens/Duane Reade,Pharmacy,"133 Dyckman Street, Manhattan",10040,Moderna,40.86,-73.93
+Walgreens/Duane Reade,Pharmacy,"2683 Broadway, Manhattan",10025,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"244 East 161 Street, Bronx",10451,Moderna,40.82,-73.93
+Walgreens/Duane Reade,Pharmacy,"7001 Amboy Road, Staten Island",10307,Moderna,40.51,-74.24
+Walgreens/Duane Reade,Pharmacy,"100 Delancey Street, Manhattan",10002,Moderna,40.71,-73.99
+Walgreens/Duane Reade,Pharmacy,"100 West 57 Street, Manhattan",10019,Moderna,40.77,-73.99
+Walgreens/Duane Reade,Pharmacy,"105 Brighton Beach Avenue, Brooklyn",11235,Moderna,40.58,-73.95
+Walgreens/Duane Reade,Pharmacy,"1091 Lexington Avenue, Manhattan",10075,Moderna,40.77,-73.95
+Walgreens/Duane Reade,Pharmacy,"116-02 Beach Channel Drive, Queens",11694,Moderna,40.58,-73.84
+Walgreens/Duane Reade,Pharmacy,"1191 2 Avenue, Manhattan",10065,Moderna,40.76,-73.96
+Walgreens/Duane Reade,Pharmacy,"122 East 42 Street, Manhattan",10168,Moderna,40.75,-73.98
+Walgreens/Duane Reade,Pharmacy,"1231 Madison Avenue, Manhattan",10128,Moderna,40.78,-73.95
+Walgreens/Duane Reade,Pharmacy,"1235 Lexington Avenue, Manhattan",10028,Moderna,40.78,-73.95
+Walgreens/Duane Reade,Pharmacy,"135 East 125 Street, Manhattan",10035,Moderna,40.8,-73.93
+Walgreens/Duane Reade,Pharmacy,"1352 1st Ave, Manhattan",10021,Moderna,40.77,-73.96
+Walgreens/Duane Reade,Pharmacy,"1490 Madison Avenue, Manhattan",10029,Moderna,40.79,-73.94
+Walgreens/Duane Reade,Pharmacy,"1498 York Avenue, Manhattan",10075,Moderna,40.77,-73.95
+Walgreens/Duane Reade,Pharmacy,"1524 2 Avenue, Manhattan",10075,Moderna,40.77,-73.95
+Walgreens/Duane Reade,Pharmacy,"155 East 34th Street, Manhattan",10016,Moderna,40.75,-73.98
+Walgreens/Duane Reade,Pharmacy,"164 Kent Avenue, Brooklyn",11249,Moderna,40.64,-73.94
+Walgreens/Duane Reade,Pharmacy,"1675 3 Avenue, Manhattan",10128,Moderna,40.78,-73.95
+Walgreens/Duane Reade,Pharmacy,"180 West 20 Street, Manhattan",10011,Moderna,40.74,-74
+Walgreens/Duane Reade,Pharmacy,"1889 Broadway, Manhattan",10023,Moderna,40.78,-73.98
+Walgreens/Duane Reade,Pharmacy,"1915 3rd Avenue, Manhattan",10029,Moderna,40.79,-73.94
+Walgreens/Duane Reade,Pharmacy,"194 East 2nd Street, Manhattan",10009,Moderna,40.73,-73.98
+Walgreens/Duane Reade,Pharmacy,"200 Water Street, Manhattan",10038,Moderna,40.71,-74
+Walgreens/Duane Reade,Pharmacy,"2069 Broadway, Manhattan",10023,Moderna,40.78,-73.98
+Walgreens/Duane Reade,Pharmacy,"24-28 Bell Boulevard, Queens",11360,Moderna,40.78,-73.78
+Walgreens/Duane Reade,Pharmacy,"249-46 Horace Harding Expressway, Queens",11362,Moderna,40.76,-73.74
+Walgreens/Duane Reade,Pharmacy,"250 Bedford Avenue, Brooklyn",11249,Moderna,40.64,-73.94
+Walgreens/Duane Reade,Pharmacy,"250 Broadway, Manhattan",10007,Moderna,40.71,-74.01
+Walgreens/Duane Reade,Pharmacy,"2522 Broadway, Manhattan",10025,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"2864 Broadway, Manhattan",10025,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"296 Flatbush Avenue, Brooklyn",11217,Moderna,40.68,-73.98
+Walgreens/Duane Reade,Pharmacy,"320 West 145th Street, Manhattan",10039,Moderna,40.83,-73.94
+Walgreens/Duane Reade,Pharmacy,"3387 Broadway, Manhattan",10031,Moderna,40.83,-73.95
+Walgreens/Duane Reade,Pharmacy,"35-06 Broadway, Queens",11106,Moderna,40.76,-73.93
+Walgreens/Duane Reade,Pharmacy,"352 Greenwich Street, Manhattan",10013,Moderna,40.72,-74
+Walgreens/Duane Reade,Pharmacy,"37-66 82 Street, Queens",11372,Moderna,40.75,-73.88
+Walgreens/Duane Reade,Pharmacy,"380 Amsterdam Avenue, Manhattan",10024,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"4 Amsterdam Avenue, Manhattan",10023,Moderna,40.78,-73.98
+Walgreens/Duane Reade,Pharmacy,"4 Columbus Circle, Manhattan",10019,Moderna,40.77,-73.99
+Walgreens/Duane Reade,Pharmacy,"4 Park Avenue, Manhattan",10016,Moderna,40.75,-73.98
+Walgreens/Duane Reade,Pharmacy,"4 West 4 Street, Manhattan",10012,Moderna,40.73,-74
+Walgreens/Duane Reade,Pharmacy,"40 Wall Street, Manhattan",10005,Moderna,40.71,-74.01
+Walgreens/Duane Reade,Pharmacy,"401 East 86th Street, Manhattan",10028,Moderna,40.78,-73.95
+Walgreens/Duane Reade,Pharmacy,"401 Park Avenue South, Manhattan",10016,Moderna,40.75,-73.98
+Walgreens/Duane Reade,Pharmacy,"425 Main Street, Manhattan",10044,Moderna,40.76,-73.95
+Walgreens/Duane Reade,Pharmacy,"436 86 Street, Brooklyn",11209,Moderna,40.62,-74.03
+Walgreens/Duane Reade,Pharmacy,"459 Broadway, Manhattan",10013,Moderna,40.72,-74
+Walgreens/Duane Reade,Pharmacy,"460 8th Avenue, Manhattan",10001,Moderna,40.75,-74
+Walgreens/Duane Reade,Pharmacy,"465 2 Avenue, Manhattan",10016,Moderna,40.75,-73.98
+Walgreens/Duane Reade,Pharmacy,"47-02 5th Street, Queens",11101,Moderna,40.74,-73.93
+Walgreens/Duane Reade,Pharmacy,"5411 Myrtle Avenue, Queens",11385,Moderna,40.7,-73.89
+Walgreens/Duane Reade,Pharmacy,"60 Spring Street, Manhattan",10012,Moderna,40.73,-74
+Walgreens/Duane Reade,Pharmacy,"60-02 Roosevelt Avenue, Queens",11377,Moderna,40.74,-73.9
+Walgreens/Duane Reade,Pharmacy,"609 Columbus Avenue, Manhattan",10024,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"619 9th Avenue, Manhattan",10036,Moderna,40.76,-73.99
+Walgreens/Duane Reade,Pharmacy,"661 8 Avenue, Manhattan",10036,Moderna,40.76,-73.99
+Walgreens/Duane Reade,Pharmacy,"700 Columbus Avenue, Manhattan",10025,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"724 Flatbush Avenue, Brooklyn",11226,Moderna,40.65,-73.96
+Walgreens/Duane Reade,Pharmacy,"73-01 37 Avenue, Queens",11372,Moderna,40.75,-73.88
+Walgreens/Duane Reade,Pharmacy,"756 Myrtle Avenue, Brooklyn",11206,Moderna,40.7,-73.94
+Walgreens/Duane Reade,Pharmacy,"77 7 Avenue, Manhattan",10011,Moderna,40.74,-74
+Walgreens/Duane Reade,Pharmacy,"773 Lexington Avenue, Manhattan",10065,Moderna,40.76,-73.96
+Walgreens/Duane Reade,Pharmacy,"777 Avenue Of The Americas, Manhattan",10001,Moderna,40.75,-74
+Walgreens/Duane Reade,Pharmacy,"84-32 Jamaica Avenue, Queens",11421,Moderna,40.69,-73.85
+Walgreens/Duane Reade,Pharmacy,"852 2nd Avenue, Manhattan",10017,Moderna,40.75,-73.97
+Walgreens/Duane Reade,Pharmacy,"900 8 Avenue, Manhattan",10019,Moderna,40.77,-73.99
+Walgreens/Duane Reade,Pharmacy,"931 1 Avenue, Manhattan",10022,Moderna,40.76,-73.97
+Walgreens/Duane Reade,Pharmacy,"949 3rd Avenue, Manhattan",10022,Moderna,40.76,-73.97
+Walgreens/Duane Reade,Pharmacy,"162-19 Hillside Ave, Queens",11432,Moderna,40.72,-73.79
+Walgreens/Duane Reade,Pharmacy,"2158 White Plains Rd, Bronx",10462,Moderna,40.84,-73.86
+Walgreens/Duane Reade,Pharmacy,"63-37 108th Street, Queens",11375,Moderna,40.72,-73.84
+Walgreens/Duane Reade,Pharmacy,"69-62 188 Street, Queens",11365,Moderna,40.74,-73.79
+Walgreens/Duane Reade,Pharmacy,"925 Soundview Ave, Bronx",10473,Moderna,40.82,-73.86
+Walgreens/Duane Reade,Pharmacy,"96-02 Rockaway Blvd, Queens",11417,Moderna,40.68,-73.84
+Walgreens/Duane Reade,Pharmacy,"145 4 Avenue, Manhattan",10003,Moderna,40.73,-73.99
+Walgreens/Duane Reade,Pharmacy,"1551 Richmond Avenue, Staten Island",10314,Moderna,40.6,-74.17
+Walgreens/Duane Reade,Pharmacy,"946 Kings Highway, Brooklyn",11223,Moderna,40.6,-73.97
+Walgreens/Duane Reade,Pharmacy,"103-14 Roosevelt Avenue, Queens",11368,Moderna,40.74,-73.85
+Walgreens/Duane Reade,Pharmacy,"1227 Forest Avenue, Staten Island",10310,Moderna,40.63,-74.12
+Walgreens/Duane Reade,Pharmacy,"14-01 College Point Boulevard, Queens",11356,Moderna,40.78,-73.84
+Walgreens/Duane Reade,Pharmacy,"33 East 23 Street, Manhattan",10010,Moderna,40.74,-73.98
+Walgreens/Duane Reade,Pharmacy,"1759 Hylan Boulevard, Staten Island",10305,Moderna,40.6,-74.07
+Walgreens/Duane Reade,Pharmacy,"83-45 Langdale Street, Queens",11040,Moderna,40.73,-73.68
+Walgreens/Duane Reade,Pharmacy,"955 Manor Road, Staten Island",10314,Moderna,40.6,-74.17
+Walgreens/Duane Reade,Pharmacy,"20 Astor Place, Manhattan",10003,Moderna,40.73,-73.99
+Walgreens/Duane Reade,Pharmacy,"80-11 80 Street, Queens",11379,Moderna,40.71,-73.88
+Walgreens/Duane Reade,Pharmacy,"78-15 Northern Boulevard, Queens",11372,Moderna,40.75,-73.88
+Walgreens/Duane Reade,Pharmacy,"2101 Church Avenue, Brooklyn",11226,Moderna,40.65,-73.96
+Walgreens/Duane Reade,Pharmacy,"298 1 Avenue, Manhattan",10009,Moderna,40.73,-73.98
+Walgreens/Duane Reade,Pharmacy,"1041 Westchester Avenue, Bronx",10459,Moderna,40.83,-73.89
+Walgreens/Duane Reade,Pharmacy,"6628 18 Avenue, Brooklyn",11204,Moderna,40.62,-73.98
+Walgreens/Duane Reade,Pharmacy,"1820 Williamsbridge Road, Bronx",10461,Moderna,40.85,-73.84
+Walgreens/Duane Reade,Pharmacy,"114 Beverley Road, Brooklyn",11218,Moderna,40.64,-73.98
+Walgreens/Duane Reade,Pharmacy,"1281 Fulton Street, Brooklyn",11216,Moderna,40.68,-73.95
+Walgreens/Duane Reade,Pharmacy,"2325 Flatbush Avenue, Brooklyn",11234,Moderna,40.61,-73.91
+Walgreens/Duane Reade,Pharmacy,"93-12 Astoria Boulevard, Queens",11369,Moderna,40.76,-73.88
+Walgreens/Duane Reade,Pharmacy,"175-06 Hillside Avenue, Queens",11432,Moderna,40.72,-73.79
+Walgreens/Duane Reade,Pharmacy,"3575 Boston Road, Bronx",10469,Moderna,40.87,-73.85
+Walgreens/Duane Reade,Pharmacy,"5564 Broadway, Bronx",10463,Moderna,40.88,-73.91
+Walgreens/Duane Reade,Pharmacy,"132-50 Metropolitan Avenue, Queens",11418,Moderna,40.7,-73.84
+Walgreens/Duane Reade,Pharmacy,"58-02 Metropolitan Avenue, Queens",11385,Moderna,40.7,-73.89
+Walgreens/Duane Reade,Pharmacy,"33-55 Crescent Street, Queens",11106,Moderna,40.76,-73.93
+Walgreens/Duane Reade,Pharmacy,"44-15 Kissena Boulevard, Queens",11355,Moderna,40.75,-73.82
+Walgreens/Duane Reade,Pharmacy,"9408 3 Avenue, Brooklyn",11209,Moderna,40.62,-74.03
+Walgreens/Duane Reade,Pharmacy,"82-77 Broadway, Queens",11373,Moderna,40.74,-73.88
+Walgreens/Duane Reade,Pharmacy,"755 Broadway, Brooklyn",11206,Moderna,40.7,-73.94
+Walgreens/Duane Reade,Pharmacy,"1612 Westchester Avenue, Bronx",10472,Moderna,40.83,-73.87
+Walgreens/Duane Reade,Pharmacy,"109-62 Francis Lewis Boulevard, Queens",11429,Moderna,40.71,-73.74
+Walgreens/Duane Reade,Pharmacy,"1973 Forest Avenue, Staten Island",10303,Moderna,40.63,-74.17
+Walgreens/Duane Reade,Pharmacy,"713 Brighton Beach Avenue, Brooklyn",11235,Moderna,40.58,-73.95
+Walgreens/Duane Reade,Pharmacy,"406 East Fordham Road, Bronx",10458,Moderna,40.86,-73.89
+Walgreens/Duane Reade,Pharmacy,"379 Myrtle Avenue, Brooklyn",11205,Moderna,40.69,-73.97
+Walgreens/Duane Reade,Pharmacy,"3000 Church Avenue, Brooklyn",11226,Moderna,40.65,-73.96
+Walgreens/Duane Reade,Pharmacy,"1366 Broadway, Brooklyn",11221,Moderna,40.69,-73.93
+Walgreens/Duane Reade,Pharmacy,"1371 Metropolitan Avenue, Bronx",10462,Moderna,40.84,-73.86
+Walgreens/Duane Reade,Pharmacy,"1409 Avenue J, Brooklyn",11230,Moderna,40.62,-73.97
+Walgreens/Duane Reade,Pharmacy,"5716 Avenue U, Brooklyn",11234,Moderna,40.61,-73.91
+Walgreens/Duane Reade,Pharmacy,"5001 Church Avenue, Brooklyn",11203,Moderna,40.64,-73.94
+Walgreens/Duane Reade,Pharmacy,"3082 Avenue U, Brooklyn",11229,Moderna,40.6,-73.94
+Walgreens/Duane Reade,Pharmacy,"84-20 Broadway, Queens",11373,Moderna,40.74,-73.88
+Walgreens/Duane Reade,Pharmacy,"4915 Flatlands Avenue, Brooklyn",11234,Moderna,40.61,-73.91
+Walgreens/Duane Reade,Pharmacy,"210 Union Avenue, Brooklyn",11211,Moderna,40.71,-73.95
+Walgreens/Duane Reade,Pharmacy,"2590 Coney Island Avenue, Brooklyn",11223,Moderna,40.6,-73.97
+Walgreens/Duane Reade,Pharmacy,"119-02 Rockaway Boulevard, Queens",11420,Moderna,40.67,-73.81
+Walgreens/Duane Reade,Pharmacy,"1847 Rockaway Parkway, Brooklyn",11236,Moderna,40.64,-73.9
+Walgreens/Duane Reade,Pharmacy,"159-34 Jamaica Avenue, Queens",11432,Moderna,40.72,-73.79
+Walgreens/Duane Reade,Pharmacy,"1328 2nd Avenue, Manhattan",10021,Moderna,40.77,-73.96
+Walgreens/Duane Reade,Pharmacy,"127-04 Guy R Brewer Boulevard, Queens",11434,Moderna,40.68,-73.78
+Walgreens/Duane Reade,Pharmacy,"149-28 14 Avenue, Queens",11357,Moderna,40.79,-73.81
+Walgreens/Duane Reade,Pharmacy,"758 Arthur Kill Road, Staten Island",10312,Moderna,40.55,-74.18
+Walgreens/Duane Reade,Pharmacy,"219-14 Merrick Boulevard, Queens",11413,Moderna,40.66,-73.75
+Walgreens/Duane Reade,Pharmacy,"2270 Clove Road, Staten Island",10305,Moderna,40.6,-74.07
+Walgreens/Duane Reade,Pharmacy,"1220 Morris Avenue, Bronx",10456,Moderna,40.83,-73.91
+Walgreens/Duane Reade,Pharmacy,"255-01 Union Turnpike, Queens",11004,Moderna,40.74,-73.71
+Walgreens/Duane Reade,Pharmacy,"2750 Boston Road, Bronx",10469,Moderna,40.87,-73.85
+Walgreens/Duane Reade,Pharmacy,"47-07 Broadway, Queens",11103,Moderna,40.76,-73.91
+Walgreens/Duane Reade,Pharmacy,"3901 White Plains Road, Bronx",10466,Moderna,40.89,-73.85
+Walgreens/Duane Reade,Pharmacy,"1559 Flatbush Avenue, Brooklyn",11210,Moderna,40.63,-73.95
+Walgreens/Duane Reade,Pharmacy,"32 East 170 Street, Bronx",10452,Moderna,40.84,-73.92
+Walgreens/Duane Reade,Pharmacy,"4123 Avenue D, Brooklyn",11203,Moderna,40.64,-73.94
+Walgreens/Duane Reade,Pharmacy,"3012 3 Avenue, Bronx",10455,Moderna,40.81,-73.91
+Walgreens/Duane Reade,Pharmacy,"2760 Broadway, #62, Manhattan",10025,Moderna,40.8,-73.97
+Walgreens/Duane Reade,Pharmacy,"110-88 Queens Boulevard, Queens",11375,Moderna,40.72,-73.84
+Walgreens/Duane Reade,Pharmacy,"91-08 Roosevelt Avenue, Queens",11372,Moderna,40.75,-73.88
+Walgreens/Duane Reade,Pharmacy,"119-10 Liberty Avenue, Queens",11419,Moderna,40.69,-73.82
+Walgreens/Duane Reade,Pharmacy,"39-20 Bell Boulevard, Queens",11361,Moderna,40.76,-73.77
+Walgreens/Duane Reade,Pharmacy,"650 East Tremont Avenue, Bronx",10457,Moderna,40.85,-73.9
+Walgreens/Duane Reade,Pharmacy,"49 West Fordham Road, Bronx",10468,Moderna,40.87,-73.9
+Walgreens/Duane Reade,Pharmacy,"3590 East Tremont Avenue, Bronx",10465,Moderna,40.82,-73.83
+Walgreens/Duane Reade,Pharmacy,"4232 Baychester Ave, Bronx",10466,Moderna,40.89,-73.85
+Walgreens/Duane Reade,Pharmacy,"691 Co-Op City Boulevard, Bronx",10475,Moderna,40.88,-73.82
+Walgreens/Duane Reade,Pharmacy,"1532 86th Street, #34, Brooklyn",11228,Moderna,40.62,-74.01
+Walgreens/Duane Reade,Pharmacy,"1040 St Johns Place, Brooklyn",11213,Moderna,40.67,-73.94
+Walgreens/Duane Reade,Pharmacy,"355 Knickerbocker Avenue, Brooklyn",11237,Moderna,40.7,-73.92
+Walgreens/Duane Reade,Pharmacy,"2532 86 Street, #54, Brooklyn",11214,Moderna,40.6,-74
+Walgreens/Duane Reade,Pharmacy,"120 Court Street, Brooklyn",11201,Moderna,40.69,-73.99
+Walgreens/Duane Reade,Pharmacy,"61-29 Springfield Blvd, Queens",11364,Moderna,40.75,-73.76
+Walgreens/Duane Reade,Pharmacy,"90-01 Sutphin Boulevard, Queens",11435,Moderna,40.7,-73.81
+Walgreens/Duane Reade,Pharmacy,"1720 Kings Highway, Brooklyn",11229,Moderna,40.6,-73.94
+Walgreens/Duane Reade,Pharmacy,"1111 Pennsylvania Avenue, Brooklyn",11207,Moderna,40.67,-73.89
+Walgreens/Duane Reade,Pharmacy,"1419 Newkirk Ave, Brooklyn",11226,Moderna,40.65,-73.96
+Walgreens/Duane Reade,Pharmacy,"160-40 Cross Bay Boulevard, Queens",11414,Moderna,40.66,-73.84
+Walgreens/Duane Reade,Pharmacy,"3040 Eastchester Rd., Bronx",10469,Moderna,40.87,-73.85
+Walgreens/Duane Reade,Pharmacy,"406 E. Fordham Road, Bronx",10458,Moderna,40.86,-73.89
+Walgreens/Duane Reade,Pharmacy,"462 5TH AVENUE, Brooklyn",11215,Moderna,40.66,-73.99
+Walgreens/Duane Reade,Pharmacy,"6628 18th Avenue, Brooklyn",11204,Moderna,40.62,-73.98
+Walgreens/Duane Reade,Pharmacy,"7009 13 Ave, Brooklyn",11228,Moderna,40.62,-74.01
+Walgreens/Duane Reade,Pharmacy,"6101 18 Ave, Brooklyn",11204,Moderna,40.62,-73.98
+Walgreens/Duane Reade,Pharmacy,"45-02 43 Ave, Queens",11104,Moderna,40.74,-73.92
+Walgreens/Duane Reade,Pharmacy,"3480 Jerome Ave, Bronx",10467,Moderna,40.87,-73.87
+Walgreens/Duane Reade,Pharmacy,"75-75 31st Avenue, Queens",11370,Moderna,40.77,-73.89
+Walgreens/Duane Reade,Pharmacy,"7821 3rd Avenue, Brooklyn",11209,Moderna,40.62,-74.03
+Walgreens/Duane Reade,Pharmacy,"93-12 ASTORIA BLVD, Queens",11369,Moderna,40.76,-73.88
+Walgreens/Duane Reade,Pharmacy,"9408 3rd Avenue, Brooklyn",11209,Moderna,40.62,-74.03
+Walgreens/Duane Reade,Pharmacy,"149-28 14th Avenue, Queens",11357,Moderna,40.79,-73.81
+Walgreens/Duane Reade,Pharmacy,"219-14 Merrick Blvd., Queens",11413,Moderna,40.66,-73.75
+Walgreens/Duane Reade,Pharmacy,"44-15 Kissena Blvd., Queens",11355,Moderna,40.75,-73.82
+Walgreens/Duane Reade,Pharmacy,"506-528 Utica Avenue, Brooklyn",11203,Moderna,40.64,-73.94
+Walgreens/Duane Reade,Pharmacy,"526 W 30th Street, Manhattan",10001,Moderna,40.75,-74
+Walgreens/Duane Reade,Pharmacy,"541 West 235th Street, Bronx",10463,Moderna,40.88,-73.91
+Walgreens/Duane Reade,Pharmacy,"8011 Eliot Ave, Queens",11379,Moderna,40.71,-73.88
+Walgreens/Duane Reade,Pharmacy,"119-02 Rockaway Blvd., Queens",11420,Moderna,40.67,-73.81
+Walgreens/Duane Reade,Pharmacy,"14-01 College Point Blvd, Queens",11356,Moderna,40.78,-73.84
+Walgreens/Duane Reade,Pharmacy,"153-45 Cross Island Pkwy, Queens",11357,Moderna,40.79,-73.81
+Walgreens/Duane Reade,Pharmacy,"73-21 Kissena Boulevard, Queens",11367,Moderna,40.73,-73.83
+Walgreens/Duane Reade,Pharmacy,"750 Manhattan Ave, Brooklyn",11222,Moderna,40.73,-73.95
+Mass Vaccination Site - Yankee Stadium,Community Health Center/Clinic,"1 E 161st Street, Bronx",10451,Pfizer,40.82,-73.93
