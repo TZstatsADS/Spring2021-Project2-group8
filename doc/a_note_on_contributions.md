@@ -11,10 +11,12 @@ Below is an example. If no contribution statement is provided, we will insert a 
 ---
 Sample project README statement.
 
-Project xxx
+Project2 Shiny App Development
 
-Team members: Avi Bond, Comma Deed, En Funn, Gem Hon
+Team members: Yiwen Fang, Hao Hu, Daizy Lam, Chuanchuan Liu, Zhihang Xia
 
-Summary: In this project, we developed a new method and improved the classification accuracy for images of cats and dogs to 99.9%
+Summary: In this project, we developed a shiny app to show the COVID-19 data in NYC by building the heat map and intuitive charts, and also provided available vaccine sites. 
 
-[Contribution Statement] AB, CD, EF and GH designed the study. AB and CD developed baseline classification model for evaluation. EF and GH explored feature engineering for improving the baseline model. AB, EF and GH discussed and designed the model evaluation protocol. CD carried out the computation for model evaluation. All team members contributed to the GitHub repository and prepared the presentation. All team members approve our work presented in our GitHub repository including this contribution statement.
+[Contribution Statement] 
+All group members designed the project together. Yiwen did the "map" tab and combined all the code; Zhihang did the "time series" tab and did the presentation; Daizy did the "home page" tab and "rate analysis" tab; Chuanchuan did the "count analysis" tab and "about" tab; Hao did the "vaccine" tab. All group members contributed to the Github repository and presentation preparation. All group members equally contributed to the improvement of the project.
+
