@@ -55,8 +55,19 @@ ui <- dashboardPage(
       
       # Second tab content
       tabItem(tabName = "widgets",
-              h2("Widgets tab content")
-      ),
+              titlePanel("Daily Increase"),
+              box(width=15, sidebarPanel(selectInput("select", label = h4("DATA"), 
+                          choices = list("Cases" = "CASE_COUNT", "Deaths" = "DEATH_COUNT", "Hospitalizations" = "HOSPITALIZED_COUNT"), 
+                          selected = "CASE_COUNT"),
+              selectInput("select2", label = h4("RANGE"), 
+                          choices = list("Citywise" = "CT", "Manhattan" = "MN_", "Staten Island" = "SI_", "Bronx" = "BX_", "Queens" = "QN_","Brooklyn" = "BK_"), 
+                          selected = "CT"),
+              radioButtons("lines", label = h4("LINE TYPE"), 
+                                 choices = list("Connect" = "Line", "Smooth" = "Trend"),
+                                 selected = "Line")
+              ),
+              mainPanel(plotlyOutput("TSplot", width="100%", height="500px"))
+      )),
       
       tabItem(tabName = "Vaccine_info",
               h2("Vaccine Info tab content"),
@@ -66,3 +77,4 @@ ui <- dashboardPage(
   )
   
 )
+

@@ -8,6 +8,10 @@ if (!require("tigris")) { install.packages("tigris")}
 library(tigris)
 if (!require("tidyverse")) { install.packages("tidyverse")}
 library(tidyverse)
+library(ggplot2)
+library(lubridate)
+library(plotly)
+library(hrbrthemes)
 
 sum.formula = JS("function (cluster) {    
     var markers = cluster.getAllChildMarkers();
@@ -181,4 +185,49 @@ server <- function(input, output) {
         )
       )
   })
+  
+  
+  # Time series tab: Zhihang Xia ----------------------------------------------------------------
+  data_by_date <- read.csv("C:/Columbia/GR5243/Spring2021-Project2-group8/data/now-data-by-day.csv")
+  data_by_date <- data_by_date%>%
+    select(-contains(c("PROB","AVG","INCOMPLETE")))%>%
+    mutate(date_of_interest=parse_date_time(date_of_interest,orders="mdy"))%>%
+    mutate(date_of_interest=as.Date(date_of_interest))
+  
+
+  output$TSplot <- renderPlotly({
+    if(input$select2=="CT"){
+      p <- ggplot(mapping=aes(x=data_by_date[["date_of_interest"]], y=data_by_date[[input$select]]))+
+        geom_point(size=0.7, colour="red")+
+        scale_x_date(date_labels = "%Y %b %d")+
+        theme_ipsum()+
+        xlab("")+
+        ylab(input$select)+
+        labs(title=paste("Citywise_", input$select, sep=""))
+      if (input$lines==c("Trend")){
+        return(ggplotly(p+geom_smooth(colour="red")))
+      }
+      else if (input$lines==c("Line")){
+        return(ggplotly(p+geom_line(colour="red")))
+      }
+    }
+    else{
+      p <- ggplot(mapping=aes(x=data_by_date[["date_of_interest"]], y=data_by_date[[paste(input$select2,input$select,sep="")]]))+
+        geom_point(size=0.7, colour="orange")+
+        scale_x_date(date_labels = "%Y %b %d")+
+        theme_ipsum()+
+        xlab("")+
+        ylab(input$select)+
+        labs(title=paste(input$select2, input$select, sep=""))
+      if (input$lines==c("Trend")){
+        return(ggplotly(p+geom_smooth(colour="orange")))
+        }
+      else if (input$lines==c("Line")){
+        return(ggplotly(p+geom_line(colour="orange")))
+      }
+      }
+    
+  })
+  
 }
+
