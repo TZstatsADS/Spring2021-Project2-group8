@@ -9,7 +9,7 @@
 ## Project Title Lorem ipsum dolor sit amet
 Term: Spring 2021
 
-+ Team #
++ Team #8
 + **Projec title**: + Team members
 	+ Yiwen Fang
 	+ Zhihang Xia
