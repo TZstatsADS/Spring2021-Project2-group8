@@ -6,11 +6,11 @@
 
 
 
-## Project Title Lorem ipsum dolor sit amet
+## Coronavirus and Vaccine Information in New York City
 Term: Spring 2021
 
 + Team #8
-+ **Projec title**: + Team members
++ **Coronavirus and Vaccine Information in New York City**: + Team members
 	+ Yiwen Fang
 	+ Zhihang Xia
 	+ Daizy Lam
