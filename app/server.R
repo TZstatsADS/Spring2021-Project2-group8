@@ -41,6 +41,7 @@ sum.formula = JS("function (cluster) {
   }")
 
 
+
 server <- function(input, output) {
   data_by_modzcta=read.csv(file="./output/data-by-modzcta.csv")
   zipcode_latitude_longitude=read.csv(file="./output/zipcode_latitude_longitude.csv")
@@ -57,10 +58,10 @@ server <- function(input, output) {
     input$data_type
   })
   
-  # cache zip boundaries that are download via tigris package
+  # Cache zip boundaries that are download via tigris package
   options(tigris_use_cache = TRUE)
   
-  # get zip boundaries that start with 282 (outdated example)
+  # Get zip boundaries that start with 282 (outdated example)
   char_zips <- zctas(cb = TRUE)
   
   # Map tab: Yiwen Fang --------------------------------------------------------
@@ -68,7 +69,7 @@ server <- function(input, output) {
   # https://api.rpubs.com/insight/leaflet
   output$map <- renderLeaflet({
     
-    # join zip boundaries and income data 
+    # Join zip boundaries and income data 
     char_zips <- geo_join(char_zips, 
                           data_by_lat_lng_input(), 
                           by_sp = "GEOID10", 
@@ -80,7 +81,7 @@ server <- function(input, output) {
       palette = "Purples",
       domain = char_zips[[data_type_input()]])
     
-    # create labels for zipcodes
+    # Create labels for zipcodes
     labels <- 
       paste0(
         "<b>", "Infomation", "</b><br/>",
@@ -123,7 +124,7 @@ server <- function(input, output) {
           label = char_zips[[data_type_input()]],
           labelOptions = labelOptions(noHide = T, direction = 'center', textOnly = T),
           clusterOptions = markerClusterOptions(iconCreateFunction=JS(sum.formula))) %>%
-        # add zip codes
+        # Add zip codes
         addPolygons(fillColor = ~pal(char_zips[[data_type_input()]]),
                     weight = 2,
                     opacity = 1,
@@ -136,7 +137,7 @@ server <- function(input, output) {
                                                  fillOpacity = 0.7,
                                                  bringToFront = TRUE),
                     label = labels) %>%
-        # add legend
+        # Add legend
         addLegend(pal = pal, 
                   values = char_zips[[data_type_input()]], 
                   opacity = 0.7, 
@@ -144,10 +145,10 @@ server <- function(input, output) {
                   position = "topright")
     } else {
       map <- leaflet(char_zips) %>%
-        # set view to New York City
+        # Set view to New York City
         setView(lng = -73.98928, lat = 40.75042, zoom = 10) %>%
         addProviderTiles("CartoDB.DarkMatter", options = providerTileOptions(noWrap = TRUE)) %>%
-        # add zip codes
+        # Add zip codes
         addPolygons(fillColor = ~pal(char_zips[[data_type_input()]]),
                     weight = 2,
                     opacity = 1,
@@ -160,7 +161,7 @@ server <- function(input, output) {
                                                  fillOpacity = 0.7,
                                                  bringToFront = TRUE),
                     label = labels) %>%
-        # add legend
+        # Add legend
         addLegend(pal = pal, 
                   values = char_zips[[data_type_input()]], 
                   opacity = 0.7, 
@@ -229,7 +230,8 @@ server <- function(input, output) {
     data_borough %>%
       filter(Borough %in% selected_boro)
   })
-  #Max Rate:
+  
+  # Max Rate:
   by_borough=read.csv("./output/by-boro.csv")
   output$max_case_rate <- renderValueBox({
     valueBox(
@@ -282,7 +284,6 @@ server <- function(input, output) {
   }) 
   
   # Rate bar chart group by Sex
-  
   output$boro_sex_cr_bar <- renderHighchart({
     data_borough_selection_s() %>%
       filter(group=='Sex') %>%
@@ -308,7 +309,6 @@ server <- function(input, output) {
   })
   
   # Rate bar chart group by Race
-  
   output$boro_race_cr_bar<- renderHighchart({
     data_borough_selection_r() %>%
       filter(group=='Race/ethnicity') %>%
@@ -339,7 +339,7 @@ server <- function(input, output) {
   Covid_Vaccine=read.csv(file="./output/Covid_Vaccine.csv")
   output$vaccine_map <- renderLeaflet({
     map <- leaflet(Covid_Vaccine) %>%
-      # set view to New York City
+      # Set view to New York City
       setView(lng = -73.98928, lat = 40.75042, zoom = 10) %>%
       addProviderTiles("CartoDB.DarkMatter", options = providerTileOptions(noWrap = TRUE)) %>%
       addCircleMarkers(
@@ -516,8 +516,7 @@ server <- function(input, output) {
     
   })
   
-  # Positive tests number & rate and confirmed death & probable death: Chuanchuan Liu ---------------------------
-  
+  # Positive tests number & rate and confirmed death & probable death
   antibody_by_boro = read.csv("./output/antibody-by-boro.csv",header=TRUE,sep=",")
   
   output$plot1 <- renderPlot({

@@ -10,8 +10,9 @@ if (!require("highcharter")) { install.packages("highcharter")}
 library(highcharter)
 
 ui <- dashboardPage(
+  
   skin = "purple",
-  dashboardHeader(title = "NYC COVID-19 & Vaccine tracker",titleWidth= 250),
+  dashboardHeader(title = "NYC COVID-19 & Vaccine tracker", titleWidth = 250),
   
   # Sidebar content
   dashboardSidebar(
@@ -87,7 +88,6 @@ ui <- dashboardPage(
                   valueBoxOutput("max_case"),
                   valueBoxOutput("max_death"),
                 )
-                
               )),
       
       # Rates
@@ -102,11 +102,9 @@ ui <- dashboardPage(
                          h4("Let's look into the COVID-19 data by the five boroughs in New York to compare the different situations in case rate, death rate and hospitalization by age group, sex and race/ethnicity."),
                          br(),
                          h3("Data by borough")
-                         
                 ),
                 
                 fluidRow(
-                  
                   tabsetPanel(
                     type="tabs",
                     tabPanel("Age",
@@ -114,7 +112,7 @@ ui <- dashboardPage(
                              fluidRow(
                                selectizeInput('select_borough_a','Select the Borough',
                                               choices = c('Boroughs' = '','Bronx','Brooklyn',
-                                                          'Manhattan','Queens','StatenIsland'), selected = 'Manhattan', multiple = TRUE),
+                                                          'Manhattan','Queens','StatenIsland'), selected = list("Bronx", "Brooklyn", "Manhattan", "Queens", "StatenIsland"), multiple = TRUE),
                                highchartOutput('boro_age_cr_bar',width = "100%"),
                                splitLayout(cellWidths = c("50%", "50%"),
                                            highchartOutput('boro_age_dr_bar',width = "80%"),
@@ -126,7 +124,7 @@ ui <- dashboardPage(
                              fluidRow(
                                selectizeInput('select_borough_s','Select the Borough',
                                               choices = c('Boroughs' = '','Bronx','Brooklyn',
-                                                          'Manhattan','Queens','StatenIsland'), selected = 'Manhattan', multiple = TRUE),
+                                                          'Manhattan','Queens','StatenIsland'), selected = list("Bronx", "Brooklyn", "Manhattan", "Queens", "StatenIsland"), multiple = TRUE),
                                br(),
                                highchartOutput('boro_sex_cr_bar',width = "100%"),
                                splitLayout(cellWidths = c("50%", "50%"),
@@ -139,7 +137,7 @@ ui <- dashboardPage(
                              fluidRow(
                                selectizeInput('select_borough_r','Select the Borough',
                                               choices = c('Boroughs' = '','Bronx','Brooklyn',
-                                                          'Manhattan','Queens','StatenIsland'), selected = 'Manhattan', multiple = TRUE),
+                                                          'Manhattan','Queens','StatenIsland'), selected = list("Bronx", "Brooklyn", "Manhattan", "Queens", "StatenIsland"), multiple = TRUE),
                                highchartOutput('boro_race_cr_bar',width = "100%"),
                                splitLayout(cellWidths = c("50%", "50%"),
                                            highchartOutput('boro_race_dr_bar',width = "80%"),
@@ -182,15 +180,13 @@ ui <- dashboardPage(
                                 tabPanel("probable death", plotOutput("plot4")))
                   )
                 ))
-
       ),
       
       # Map tab content
       tabItem(tabName = "map",
               box(
                 width=2,
-                title = "Control Panel", status = "primary", solidHeader = TRUE,
-                collapsible = TRUE,
+                title = "Control Panel", status = "primary",
                 checkboxGroupInput("borough", label = h3("Borough"), 
                                    choices = list("Manhattan" = "Manhattan", "Staten Island" = "Staten Island", "Bronx" = "Bronx", "Queens" = "Queens", "Brooklyn" = "Brooklyn"),
                                    selected = list("Manhattan", "Staten Island", "Bronx", "Queens", "Brooklyn")),
@@ -240,9 +236,7 @@ ui <- dashboardPage(
       ),
       
       tabItem(tabName = "About",
-              
               box(width=12, h1(strong("ABOUT"), align="center")),     
-              
               mainPanel(width=12, h2(strong("Contributors"), align="center")),
               h4("Yiwen Fang, yf2560@columbia.edu", align="center"),
               h4("Zhihang Xia, zx2338@columbia.edu", align="center"),
@@ -259,13 +253,10 @@ ui <- dashboardPage(
                            ". ",align="center")
               ),
               br(),
-              
               mainPanel(width=12, h2(strong("Code"), align="center"),
                         h4("More detailed codes are shared at", a("Github", 
                                                                   href="https://github.com/TZstatsADS/Spring2021-Project2-group8"), ". ", align="center"))
-              
       )
     )
   )
-  
 )
