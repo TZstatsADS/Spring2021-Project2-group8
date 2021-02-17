@@ -21,7 +21,7 @@ Term: Spring 2021
 	+ Zhihang Xia
 	+ Daizy Lam
 	+ Chuanchuan Liu
-	+ Hu Hao
+	+ Hao Hu
 + **Shiny app Link**
 	+ https://yiwenfang.shinyapps.io/myapp/
 + **Project summary**
