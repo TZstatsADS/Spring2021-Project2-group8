@@ -81,7 +81,7 @@ ui <- dashboardPage(
                 fluidRow(
                   width = 12,
                   h2("Overall COVID-19 Case & Death",align = "center"),
-                  
+                  p("Last Updated: February 13, 2021"),
                   valueBoxOutput("total"),
                   valueBoxOutput("death")),
                 fluidRow(
@@ -94,6 +94,7 @@ ui <- dashboardPage(
       tabItem(tabName = "Rates",
               fluidPage(
                 fluidRow(titlePanel("Interactive COVID-19 Rates Dashboard"),
+                         p("Last Updated: February 13, 2021"),
                          fluidRow(
                            valueBoxOutput('max_case_rate'),
                            valueBoxOutput('max_death_rate'),
