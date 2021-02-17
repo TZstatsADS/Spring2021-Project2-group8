@@ -2,6 +2,15 @@
 
 ### [Project Description](doc/project2_desc.md)
 
++ **Screenshots**
+
+![screenshot](doc/figs/1.png)
+![screenshot](doc/figs/2.png)
+![screenshot](doc/figs/3.png)
+![screenshot](doc/figs/4.png)
+![screenshot](doc/figs/5.png)
+![screenshot](doc/figs/6.png)
+
 ## Coronavirus and Vaccine Information in New York City
 Term: Spring 2021
 
@@ -37,12 +46,3 @@ Please see each subfolder for a README file.
 + **Main Files**
 	+ [ui.R](app/ui.R)
 	+ [server.R](app/server.R)
-	
-+ **Screenshots**
-
-![screenshot](doc/figs/1.png)
-![screenshot](doc/figs/2.png)
-![screenshot](doc/figs/3.png)
-![screenshot](doc/figs/4.png)
-![screenshot](doc/figs/5.png)
-![screenshot](doc/figs/6.png)
