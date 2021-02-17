@@ -12,7 +12,7 @@ library(highcharter)
 ui <- dashboardPage(
   
   skin = "purple",
-  dashboardHeader(title = "NYC COVID-19 & Vaccine tracker", titleWidth = 250),
+  dashboardHeader(title = "Get Vaccinated, NYC!", titleWidth = 250),
   
   # Sidebar content
   dashboardSidebar(
@@ -37,7 +37,7 @@ ui <- dashboardPage(
               fluidPage(
                 h2(strong("Let's get vaccinated, NYC!"),align = "center"),
                 h3("Chuanchuan Liu, Daizy Lam, Hao Hu, Yiwen Fang, Zhihang Xia",align = "center",style="color:olive"),
-                h4("2021Spring GR5243 Project2 Group8 - M.A. Statistics program at Columbia University",align = "center",style="color:olive"),
+                h4("2021Spring GR5243 Project2 Group8 - M.A. Statistics & M.S. Computer Science program at Columbia University",align = "center",style="color:olive"),
                 
                 fluidRow(width = 20, 
                          br(),

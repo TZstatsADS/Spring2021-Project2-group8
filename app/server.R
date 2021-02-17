@@ -49,6 +49,8 @@ server <- function(input, output) {
     inner_join(zipcode_latitude_longitude, by = "MODIFIED_ZCTA") %>%
     mutate(zipcode=as.character(MODIFIED_ZCTA))
   
+  # save(data_by_lat_lng, file="../output/data_by_lat_lng.RData")
+  
   data_by_lat_lng_input <- reactive({
     data_by_lat_lng %>%
       filter(BOROUGH_GROUP %in% input$borough)
@@ -63,6 +65,8 @@ server <- function(input, output) {
   
   # Get zip boundaries that start with 282 (outdated example)
   char_zips <- zctas(cb = TRUE)
+  
+  # save(char_zips, file="../output/char_zips.RData")
   
   # Map tab: Yiwen Fang --------------------------------------------------------
   
@@ -211,6 +215,9 @@ server <- function(input, output) {
   # Analysis tab: 1) Rates: Daizy Lam ------------------------------------------
   
   data_borough=read.csv("./output/group-data-by-boro-edit.csv")
+  
+  # save(data_borough, file="../output/data_borough.RData")
+  
   data_borough_selection_a <- reactive({
     if(is.null(input$select_borough_a)){selected_boro = levels(data_borough$Borough)}
     else{selected_boro = input$select_borough_a}  
@@ -233,6 +240,9 @@ server <- function(input, output) {
   
   # Max Rate:
   by_borough=read.csv("./output/by-boro.csv")
+  
+  # save(by_borough, file="../output/by_borough.RData")
+  
   output$max_case_rate <- renderValueBox({
     valueBox(
       h4("Highest Case Rate : StatenIsland"),
@@ -337,6 +347,9 @@ server <- function(input, output) {
   # Vaccine tab: Hao Hu---------------------------------------------------------
   
   Covid_Vaccine=read.csv(file="./output/Covid_Vaccine.csv")
+  
+  # save(Covid_Vaccine, file="../output/Covid_Vaccine.RData")
+  
   output$vaccine_map <- renderLeaflet({
     map <- leaflet(Covid_Vaccine) %>%
       # Set view to New York City
@@ -381,12 +394,13 @@ server <- function(input, output) {
     mutate(date_of_interest=parse_date_time(date_of_interest,orders="mdy"))%>%
     mutate(date_of_interest=as.Date(date_of_interest))
   
+  # save(data_by_date, file="../output/data_by_date.RData")
   
   output$TSplot <- renderPlotly({
     if(input$select2=="CT"){
       p <- ggplot(mapping=aes(x=data_by_date[["date_of_interest"]], y=data_by_date[[input$select]]))+
         geom_point(size=0.7, colour="red")+
-        scale_x_date(date_labels = "%Y %b %d")+
+        scale_x_date(date_labels = "%Y/%m/%d")+
         theme_ipsum()+
         xlab("")+
         ylab(input$select)+
@@ -401,7 +415,7 @@ server <- function(input, output) {
     else{
       p <- ggplot(mapping=aes(x=data_by_date[["date_of_interest"]], y=data_by_date[[paste(input$select2,input$select,sep="")]]))+
         geom_point(size=0.7, colour="orange")+
-        scale_x_date(date_labels = "%Y %b %d")+
+        scale_x_date(date_labels = "%Y/%m/%d")+
         theme_ipsum()+
         xlab("")+
         ylab(input$select)+
@@ -424,6 +438,8 @@ server <- function(input, output) {
     
     by_boro = read.csv("./output/by-boro_origin.csv",header=TRUE,sep=",")
     
+    # save(by_boro, file="../output/by_boro.RData")
+    
     if (countType == "case count" && groupType == "overview"){
       barplot(by_boro$CASE_COUNT, main='case count by borough', 
               names.arg=c('Bronx','Brooklyn','Manhattan','Queens','Statenlsland','Citywide'), 
@@ -434,6 +450,8 @@ server <- function(input, output) {
     df1 <- cbind(group_cases_by_boro$BK_CASE_COUNT, group_cases_by_boro$BX_CASE_COUNT, group_cases_by_boro$MN_CASE_COUNT, group_cases_by_boro$QN_CASE_COUNT, group_cases_by_boro$SI_CASE_COUNT)
     colnames(df1) <- c('BK_CASE_COUNT', 'BX_CASE_COUNT', 'MN_CASE_COUNT', 'QN_CASE_COUNT', 'SI_CASE_COUNT')
     rownames(df1) <- c('boroughwide','0-4','5-12','13-17','18-24','25-34','35-44','45-54','55-64','65-74','75+','asian','black','hispanic','white','female','male')
+    
+    # save(df1, file="../output/df1.RData")
     
     if (countType == "case count" && groupType == "sex"){
       barplot(df1[16:17,1:5], main='case count by borough and sex', 
@@ -465,6 +483,8 @@ server <- function(input, output) {
     colnames(df2) <- c('BK_DEATH_COUNT', 'BX_DEATH_COUNT', 'MN_DEATH_COUNT', 'QN_DEATH_COUNT', 'SI_DEATH_COUNT')
     rownames(df2) <- c('boroughwide','0-17','18-24','25-34','35-44','45-54','55-64','65-74','75+','asian','black','hispanic','white','female','male')
     
+    # save(df2, file="../output/df2.RData")
+    
     if (countType == "death count" && groupType == "sex"){
       barplot(df2[14:15,1:5], main='death count by borough and sex', 
               names.arg=c('Brooklyn','Bronx','Manhattan','Queens','Statenlsland'), 
@@ -495,6 +515,8 @@ server <- function(input, output) {
     colnames(df3) <- c('BK_HOSPITALIZED_COUNT', 'BX_HOSPITALIZED_COUNT', 'MN_HOSPITALIZED_COUNT', 'QN_HOSPITALIZED_COUNT', 'SI_HOSPITALIZED_COUNT')
     rownames(df3) <- c('boroughwide','0-4','5-12','13-17','18-24','25-34','35-44','45-54','55-64','65-74','75+','asian','black','hispanic','white','female','male')
     
+    # save(df3, file="../output/df3.RData")
+    
     if (countType == "hospitalized count" && groupType == "sex"){
       barplot(df3[16:17,1:5], main='hospitalized count by borough and sex', 
               names.arg=c('Brooklyn','Bronx','Manhattan','Queens','Statenlsland'), 
@@ -518,6 +540,8 @@ server <- function(input, output) {
   
   # Positive tests number & rate and confirmed death & probable death
   antibody_by_boro = read.csv("./output/antibody-by-boro.csv",header=TRUE,sep=",")
+  
+  # save(antibody_by_boro, file="../output/antibody_by_boro.RData")
   
   output$plot1 <- renderPlot({
     if (input$tpanel == "number of test positive"){
@@ -545,6 +569,8 @@ server <- function(input, output) {
   
   prob_comf_by_boro = read.csv("./output/probable-confirmed-by-boro.csv",header=TRUE,sep=",")
   
+  # save(prob_comf_by_boro, file="../output/prob_comf_by_boro.RData")
+  
   output$plot3 <- renderPlot({
     if (input$tpanel == "comfirmed death"){
       slices <- prob_comf_by_boro$CONFIRMED_DEATH
@@ -568,5 +594,4 @@ server <- function(input, output) {
           main="probable death by borough")
     }
   })
-  
 }
