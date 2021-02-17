@@ -10,6 +10,7 @@
 ![screenshot](doc/figs/4.png)
 ![screenshot](doc/figs/5.png)
 ![screenshot](doc/figs/6.png)
+![screenshot](doc/figs/7.png)
 
 ## Coronavirus and Vaccine Information in New York City
 Term: Spring 2021
